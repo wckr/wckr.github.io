@@ -1,0 +1,14 @@
+.vagrant/
+log/
+user-data
+config.rb
+data/
+
+# Ignore other unnecessary files.
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
