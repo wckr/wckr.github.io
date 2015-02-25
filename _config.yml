@@ -1,0 +1,15 @@
+# Site settings
+title: Wocker
+description: > # Wocker provides a Docker-based rapid development environment of WordPress. IT TAKES JUST 3 SECONDS TO CREATE A NEW ONE!
+baseurl: "/wocker/" # the subpath of your site, e.g. /blog/
+url: "http://ixkaito.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+google_analytics:
+  id:
+  propname:
+github:
+  user: ixkaito
+  project: wocker
