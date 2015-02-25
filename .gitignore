@@ -1,9 +1,3 @@
-.vagrant/
-log/
-user-data
-config.rb
-data/
-
 # Ignore other unnecessary files.
 doc/
 *.swp
@@ -12,3 +6,9 @@ doc/
 .DS_Store
 .idea
 .secret
+
+# Jekyll
+_site/
+
+# Sass
+.sass-cache/
