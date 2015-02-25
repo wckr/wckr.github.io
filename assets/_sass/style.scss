@@ -1,3 +1,67 @@
 @charset "UTF-8";
 @import "reset";
+@import "variables";
 @import "compass";
+
+body {
+	line-height: 1.6;
+}
+
+p {
+	font-size: $p_font_size;
+	margin: ($p_font_size * 1) 0;
+}
+
+h1 {
+	font-size: $h1_font_size;
+	margin: ($p_font_size * 2) 0 ($p_font_size * 1.6);
+}
+
+h2 {
+	font-size: $h2_font_size;
+	margin: ($p_font_size * 1.8) 0 ($p_font_size * 1.6);
+}
+
+h3 {
+	font-size: $h3_font_size;
+	margin: ($p_font_size * 1.6) 0 ($p_font_size * 1.4);
+}
+
+h4 {
+	font-size: $h4_font_size;
+	margin: ($p_font_size * 1.4) 0 ($p_font_size * 1.2);
+}
+
+h5 {
+	font-size: $h5_font_size;
+	margin: ($p_font_size * 1.2) 0 ($p_font_size * 1);
+}
+
+h6 {
+	font-size: $h6_font_size;
+	margin: ($p_font_size * 1) 0 ($p_font_size * 0.6);
+}
+
+pre {
+	color: #fff;
+	padding: $p_font_size;
+	background: $pre_bg_color;
+	@include border-radius(4px);
+}
+
+.inner {
+	width: 960px;
+	margin: auto;
+}
+
+.header {
+	padding: 40px;
+	background: $brand_color;
+	color: #fff;
+
+}
+
+.main {
+}
+
+

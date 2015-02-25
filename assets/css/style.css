@@ -136,3 +136,73 @@ h1, h2, h3, h4, h5, h6 {
 img {
   vertical-align: top;
 }
+
+/* line 6, ../_sass/style.scss */
+body {
+  line-height: 1.6;
+}
+
+/* line 10, ../_sass/style.scss */
+p {
+  font-size: 16px;
+  margin: 16px 0;
+}
+
+/* line 15, ../_sass/style.scss */
+h1 {
+  font-size: 32px;
+  margin: 32px 0 25.6px;
+}
+
+/* line 20, ../_sass/style.scss */
+h2 {
+  font-size: 28.8px;
+  margin: 28.8px 0 25.6px;
+}
+
+/* line 25, ../_sass/style.scss */
+h3 {
+  font-size: 25.6px;
+  margin: 25.6px 0 22.4px;
+}
+
+/* line 30, ../_sass/style.scss */
+h4 {
+  font-size: 22.4px;
+  margin: 22.4px 0 19.2px;
+}
+
+/* line 35, ../_sass/style.scss */
+h5 {
+  font-size: 19.2px;
+  margin: 19.2px 0 16px;
+}
+
+/* line 40, ../_sass/style.scss */
+h6 {
+  font-size: 16px;
+  margin: 16px 0 9.6px;
+}
+
+/* line 45, ../_sass/style.scss */
+pre {
+  padding: 16px;
+  background: #282822;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+/* line 52, ../_sass/style.scss */
+.inner {
+  width: 960px;
+  margin: auto;
+}
+
+/* line 57, ../_sass/style.scss */
+.header {
+  padding: 40px;
+  background: #80bfff;
+  color: #fff;
+}
