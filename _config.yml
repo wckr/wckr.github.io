@@ -1,12 +1,9 @@
 # Site settings
 title: Wocker
 # email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://ixkaito.github.io/wocker" # the base hostname & protocol for your site
+description: This repository provides a template Vagrantfile to create a Docker-based rapid development environment of WordPress. IT TAKES JUST 3 SECONDS TO CREATE A NEW ONE!
+baseurl: ""
+url: "http://ixkaito.github.io/wocker"
 twitter_username: ixkaito
 github_username:  ixkaito
 
