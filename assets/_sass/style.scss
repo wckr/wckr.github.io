@@ -5,6 +5,7 @@
 
 body {
 	line-height: 1.6;
+	color: $font_color;
 }
 
 p {
@@ -54,14 +55,10 @@ pre {
 	margin: auto;
 }
 
-.header {
+.site-header {
 	padding: 40px;
 	background: $brand_color;
 	color: #fff;
 
 }
-
-.main {
-}
-
 
