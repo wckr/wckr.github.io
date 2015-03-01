@@ -47,11 +47,21 @@ h6 {
 	margin: ($p_font_size * 1) 0 ($p_font_size * 0.6);
 }
 
+code,
 pre {
 	color: #fff;
-	padding: $p_font_size;
 	background: $pre_bg_color;
 	@include border-radius(4px);
+}
+
+code {
+	margin: 0 0.5em;
+	padding: 3px 6px;
+	vertical-align: baseline;
+}
+
+pre {
+	padding: $p_font_size;
 }
 
 .site-header {
@@ -59,6 +69,39 @@ pre {
 	background: $brand_color;
 	color: #fff;
 
+}
+
+.site-content {
+
+	h1 {
+		text-indent: -1.15em;
+
+		&:before {
+			content: "#";
+			color: $brand_color;
+			margin-right: 0.5em;
+		}
+	}
+
+	h2 {
+		text-indent: -1.8em;
+
+		&:before {
+			content: "##";
+			color: $brand_color;
+			margin-right: 0.5em;
+		}
+	}
+
+	h3 {
+		text-indent: -2.45em;
+
+		&:before {
+			content: "###";
+			color: $brand_color;
+			margin-right: 0.5em;
+		}
+	}
 }
 
 .inner {
