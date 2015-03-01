@@ -12,6 +12,15 @@ body {
 	color: $font_color;
 }
 
+a {
+	color: $brand_color;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
 p {
 	font-size: $p_font_size;
 	margin: ($p_font_size * 1) 0;
@@ -54,13 +63,16 @@ pre {
 	@include border-radius(4px);
 }
 
-code {
-	margin: 0 0.5em;
-	padding: 3px 6px;
-	vertical-align: baseline;
+p {
+	code {
+		margin: 0 0.5em;
+		padding: 3px 6px;
+		vertical-align: baseline;
+	}
 }
 
 pre {
+	margin: ($p_font_size * 1) 0;
 	padding: $p_font_size;
 }
 

@@ -151,48 +151,58 @@ body {
 }
 
 /* line 15, ../_sass/style.scss */
+a {
+  color: #80bfff;
+  text-decoration: none;
+}
+/* line 19, ../_sass/style.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 24, ../_sass/style.scss */
 p {
   font-size: 16px;
   margin: 16px 0;
 }
 
-/* line 20, ../_sass/style.scss */
+/* line 29, ../_sass/style.scss */
 h1 {
   font-size: 32px;
   margin: 32px 0 25.6px;
 }
 
-/* line 25, ../_sass/style.scss */
+/* line 34, ../_sass/style.scss */
 h2 {
   font-size: 28.8px;
   margin: 28.8px 0 25.6px;
 }
 
-/* line 30, ../_sass/style.scss */
+/* line 39, ../_sass/style.scss */
 h3 {
   font-size: 25.6px;
   margin: 25.6px 0 22.4px;
 }
 
-/* line 35, ../_sass/style.scss */
+/* line 44, ../_sass/style.scss */
 h4 {
   font-size: 22.4px;
   margin: 22.4px 0 19.2px;
 }
 
-/* line 40, ../_sass/style.scss */
+/* line 49, ../_sass/style.scss */
 h5 {
   font-size: 19.2px;
   margin: 19.2px 0 16px;
 }
 
-/* line 45, ../_sass/style.scss */
+/* line 54, ../_sass/style.scss */
 h6 {
   font-size: 16px;
   margin: 16px 0 9.6px;
 }
 
-/* line 50, ../_sass/style.scss */
+/* line 59, ../_sass/style.scss */
 code,
 pre {
   color: #fff;
@@ -202,77 +212,78 @@ pre {
   border-radius: 4px;
 }
 
-/* line 57, ../_sass/style.scss */
-code {
+/* line 67, ../_sass/style.scss */
+p code {
   margin: 0 0.5em;
   padding: 3px 6px;
   vertical-align: baseline;
 }
 
-/* line 63, ../_sass/style.scss */
+/* line 74, ../_sass/style.scss */
 pre {
+  margin: 16px 0;
   padding: 16px;
 }
 
-/* line 67, ../_sass/style.scss */
+/* line 79, ../_sass/style.scss */
 .site-header {
   padding: 40px;
   background: #80bfff;
   color: #fff;
 }
 
-/* line 76, ../_sass/style.scss */
+/* line 88, ../_sass/style.scss */
 .site-content h1 {
   text-indent: -1.15em;
 }
-/* line 79, ../_sass/style.scss */
+/* line 91, ../_sass/style.scss */
 .site-content h1:before {
   content: "#";
   color: #80bfff;
   margin-right: 0.5em;
 }
-/* line 86, ../_sass/style.scss */
+/* line 98, ../_sass/style.scss */
 .site-content h2 {
   text-indent: -1.8em;
 }
-/* line 89, ../_sass/style.scss */
+/* line 101, ../_sass/style.scss */
 .site-content h2:before {
   content: "##";
   color: #80bfff;
   margin-right: 0.5em;
 }
-/* line 96, ../_sass/style.scss */
+/* line 108, ../_sass/style.scss */
 .site-content h3 {
   text-indent: -2.45em;
 }
-/* line 99, ../_sass/style.scss */
+/* line 111, ../_sass/style.scss */
 .site-content h3:before {
   content: "###";
   color: #80bfff;
   margin-right: 0.5em;
 }
 
-/* line 107, ../_sass/style.scss */
+/* line 119, ../_sass/style.scss */
 .inner {
   width: 960px;
   margin: auto;
   padding: 0 10px;
 }
-/* line 112, ../_sass/style.scss */
+/* line 124, ../_sass/style.scss */
 .inner > .main,
 .inner > .aside {
   margin-left: -10px;
   margin-right: -10px;
 }
 
-/* line 119, ../_sass/style.scss */
+/* line 131, ../_sass/style.scss */
 .main {
   float: left;
   width: 75%;
   padding: 0 10px;
 }
 
-/* line 125, ../_sass/style.scss */
+/* line 137, ../_sass/style.scss */
 .aside {
   float: right;
   width: 25%;
