@@ -40,20 +40,24 @@ __6. Visit following site in your browser__
 
 ## Credentials and Such
 
-__WordPress__  
+__WordPress__
+
 * User: `admin`
 * Pass: `admin`
 
-__Database__  
+__Database__
+
 * Name: `wordpress`
 * User: `wordpress`
 * Pass: `wordpress`
 
-__WordPress Source of running container (Synced)__  
+__WordPress Source of running container (Synced)__
+
 * Local machine: `data/wordpress`
 * Guest machine: `/home/core/data/wordpress`
 
-__Synced Folder__  
+__Synced Folder__
+
 * Local machine: `data`
 * Guest machine: `/home/core/data`
 
@@ -61,20 +65,26 @@ __Synced Folder__
 
 Before running a new one, you must stop or remove the running Wocker container via Wocker command line.
 
-__1. Connect to the guest machine via SSH__  
+__1. Connect to the guest machine via SSH__
+
 ```
 $ vagrant ssh
 ```
 
-__2. Use Wocker commands to stop or remove the running Wocker container__  
+__2. Use Wocker commands to stop or remove the running Wocker container__
+
 ```
 core@wocker ~ $ wocker stop CONTAINER
 ```
+
 or
+
 ```
 core@wocker ~ $ wocker kill CONTAINER
 ```
+
 or
+
 ```
 core@wocker ~ $ wocker rm CONTAINER
 ```

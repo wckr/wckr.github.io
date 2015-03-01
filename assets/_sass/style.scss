@@ -63,9 +63,10 @@ pre {
 	@include border-radius(4px);
 }
 
-p {
+p,
+li {
 	code {
-		margin: 0 0.5em;
+		// margin: 0 0.5em;
 		padding: 3px 6px;
 		vertical-align: baseline;
 	}
