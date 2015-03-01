@@ -3,6 +3,10 @@
 @import "variables";
 @import "compass";
 
+* {
+	@include box-sizing(border-box);
+}
+
 body {
 	line-height: 1.6;
 	color: $font_color;
@@ -50,11 +54,6 @@ pre {
 	@include border-radius(4px);
 }
 
-.inner {
-	width: 960px;
-	margin: auto;
-}
-
 .site-header {
 	padding: 40px;
 	background: $brand_color;
@@ -62,3 +61,26 @@ pre {
 
 }
 
+.inner {
+	width: 960px;
+	margin: auto;
+	padding: 0 10px;
+
+	> .main,
+	> .aside {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+}
+
+.main {
+	float: left;
+	width: 75%;
+	padding: 0 10px;
+}
+
+.aside {
+	float: right;
+	width: 25%;
+	padding: 0 10px;
+}
