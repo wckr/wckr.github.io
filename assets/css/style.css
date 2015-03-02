@@ -152,7 +152,7 @@ body {
 
 /* line 15, ../_sass/style.scss */
 a {
-  color: #80bfff;
+  color: deepskyblue;
   text-decoration: none;
 }
 /* line 19, ../_sass/style.scss */
@@ -228,7 +228,7 @@ pre {
 /* line 80, ../_sass/style.scss */
 .site-header {
   padding: 40px;
-  background: #80bfff;
+  background: #33ccff;
   color: #fff;
 }
 
@@ -239,7 +239,7 @@ pre {
 /* line 92, ../_sass/style.scss */
 .site-content h1:before {
   content: "#";
-  color: #80bfff;
+  color: #33ccff;
   margin-right: 0.5em;
 }
 /* line 99, ../_sass/style.scss */
@@ -249,7 +249,7 @@ pre {
 /* line 102, ../_sass/style.scss */
 .site-content h2:before {
   content: "##";
-  color: #80bfff;
+  color: #33ccff;
   margin-right: 0.5em;
 }
 /* line 109, ../_sass/style.scss */
@@ -259,7 +259,7 @@ pre {
 /* line 112, ../_sass/style.scss */
 .site-content h3:before {
   content: "###";
-  color: #80bfff;
+  color: #33ccff;
   margin-right: 0.5em;
 }
 

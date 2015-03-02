@@ -1,9 +1,11 @@
 @charset "UTF-8";
 
-$blue: #80bfff;
+$blue: #33ccff;
+
+$brand_color: $blue;
 
 $font_color: #333;
-$brand_color: $blue;
+$link_color: darken($brand_color, 10%);
 $pre_bg_color: #282822;
 
 
