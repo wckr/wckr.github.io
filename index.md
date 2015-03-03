@@ -20,11 +20,10 @@ $ vagrant plugin install vagrant-hostsupdater
 
 Windows is not allowed to change hosts-file. Please add "wocker.dev 172.17.8.23" by yourself!
 
-### 4. Clone the Wocker Repo
+### 4. Clone the Wocker Repository
 
 ```
-$ git clone https://github.com/ixkaito/wocker.git
-$ cd wocker
+$ git clone https://github.com/ixkaito/wocker.git && cd wocker
 ```
 
 ### 5. Start up Wocker
