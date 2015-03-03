@@ -10,9 +10,15 @@ $pre_bg_color: #282822;
 
 
 $p_font_size: 16px;
-$h1_font_size: $p_font_size * 2;
-$h2_font_size: $p_font_size * 1.8;
-$h3_font_size: $p_font_size * 1.6;
-$h4_font_size: $p_font_size * 1.4;
+$h1_font_size: $p_font_size * 4;
+$h2_font_size: $p_font_size * 3;
+$h3_font_size: $p_font_size * 2;
+$h4_font_size: $p_font_size * 1.6;
 $h5_font_size: $p_font_size * 1.2;
 $h6_font_size: $p_font_size * 1;
+
+$header_logo_font_size: 64px;
+
+$brand_font_family: 'Quicksand', sans-serif;
+
+$border_color: #eee;
