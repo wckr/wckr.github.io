@@ -79,9 +79,9 @@ pre {
 
 .site-header {
 	padding: 40px;
-	background: $brand_color;
+	background: $brand_color url(../images/header-bg.jpg) no-repeat center center;
+	background-size: cover;
 	color: #fff;
-
 }
 
 .site-content {

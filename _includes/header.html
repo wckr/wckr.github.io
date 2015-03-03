@@ -8,10 +8,10 @@
 	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+	<link rel="stylesheet" href="{{ site.baseurl }}{{ site.css_dir }}/style.css" />
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="{{ site.baseurl }}/assets/images/favicon.ico" />
-	<link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/apple-touch-icon.png" />
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="{{ site.baseurl }}{{ site.images_dir }}/favicon.ico" />
+	<link rel="apple-touch-icon" href="{{ site.baseurl }}{{ site.images_dir }}/apple-touch-icon.png" />
 </head>
 
 <body>

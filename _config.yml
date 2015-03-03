@@ -3,10 +3,15 @@ title: Wocker
 # email: your-email@domain.com
 description: This repository provides a template Vagrantfile to create a Docker-based rapid development environment of WordPress.
 copy: IT TAKES JUST 3 SECONDS TO CREATE A NEW ONE!
-baseurl: "/wocker"
-url: "http://ixkaito.github.io"
 twitter_username: ixkaito
 github_username:  ixkaito
+
+baseurl: "/wocker"
+url: "http://ixkaito.github.io"
+
+images_dir: "/assets/images"
+css_dir: "/assets/css"
+js_dir: "/assets/js"
 
 # Build settings
 markdown: redcarpet

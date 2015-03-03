@@ -228,7 +228,8 @@ pre {
 /* line 80, ../_sass/style.scss */
 .site-header {
   padding: 40px;
-  background: #33ccff;
+  background: #33ccff url(../images/header-bg.jpg) no-repeat center center;
+  background-size: cover;
   color: #fff;
 }
 
