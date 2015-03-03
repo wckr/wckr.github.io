@@ -110,9 +110,13 @@ or
 core@wocker ~ $ wocker rm CONTAINER
 ```
 
-e.g. `$ wocker stop wocker`
-
 `CONTAINER` can be a name or ID of a container. You can use a docker command `$ docker ps` or a wocker command `$ wocker ps` (alias) to list running containers.
+
+e.g.
+
+```
+core@wocker ~ $ wocker stop wocker
+```
 
 __Note:__ The initial Wocker container's name after your first `$ vagrant up` is "wocker".
 
@@ -125,7 +129,11 @@ core@wocker ~ $ wocker run
 
 You can use the name option to assign a specific name to the container.
 
-e.g. `$ wocker run --name wp`
+e.g.
+
+```
+core@wocker ~ $ wocker run --name wp
+```
 
 ## Restart a stopped Wocker container (1 SECONDS)
 
@@ -163,9 +171,13 @@ core@wocker ~ $ wocker rm CONTAINER
 core@wocker ~ $ wocker start CONTAINER
 ```
 
-e.g. `$ wocker start wocker`
-
 `CONTAINER` can be a name or ID of a container. You can use a docker command `$ docker ps -a` or a wocker command `$ wocker ps -a` (alias) to list all containers including stopped ones.
+
+e.g.
+
+```
+core@wocker ~ $ wocker start wocker
+```
 
 ## Shutdown Wocker
 
