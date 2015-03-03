@@ -29,7 +29,7 @@ $ cd wocker
 
 ### 5. Start up Wocker
 
-```
+```javascript
 $ vagrant up
 ```
 This could take a while on the first run as your local machine downloads the required files. Watch as the script ends, as an administrator or su password may be required.
@@ -42,36 +42,57 @@ This could take a while on the first run as your local machine downloads the req
 
 ### WordPress
 
-* User: `admin`
-* Pass: `admin`
+<dl class="dl_inline dl_10">
+  <dt>User:</dt>
+  <dd><code>admin</code></dd>
+
+  <dt>Pass:</dt>
+  <dd><code>admin</code></dd>
+</dl>
 
 ### Database
 
-* Name: `wordpress`
-* User: `wordpress`
-* Pass: `wordpress`
+<dl class="dl_inline dl_10">
+  <dt>Name:</dt>
+  <dd><code>wordpress</code></dd>
+
+  <dt>User:</dt>
+  <dd><code>wordpress</code></dd>
+
+  <dt>Pass:</dt>
+  <dd><code>wordpress</code></dd>
+</dl>
 
 ### WordPress Source of a running container (Synced)
 
-* Local machine: `data/wordpress`
-* Guest machine: `/home/core/data/wordpress`
+<dl class="dl_inline dl_20">
+  <dt>Local machine:</dt>
+  <dd><code>data/wordpress</code></dd>
+
+  <dt>Guest machine:</dt>
+  <dd><code>/home/core/data/wordpress</code></dd>
+</dl>
 
 ### Synced Folder
 
-* Local machine: `data`
-* Guest machine: `/home/core/data`
-
+<dl class="dl_inline dl_20">
+  <dt>Local machine:</dt>
+  <dd><code>data</code></dd>
+  
+  <dt>Guest machine:</dt>
+  <dd><code>/home/core/data</code></dd>
+</dl>
 ## Run a new Wocker container (3 SECONDS)
 
 Before running a new one, you must stop or remove the running Wocker container via Wocker command line.
 
-__1. Connect to the guest machine via SSH__
+### 1. Connect to the guest machine via SSH
 
 ```
 $ vagrant ssh
 ```
 
-__2. Use Wocker commands to stop or remove the running Wocker container__
+### 2. Use Wocker commands to stop or remove the running Wocker container
 
 ```
 core@wocker ~ $ wocker stop CONTAINER
@@ -88,97 +109,124 @@ or
 ```
 core@wocker ~ $ wocker rm CONTAINER
 ```
-e.g. `$ wocker stop wocker`  
-`CONTAINER` can be a name or ID of a container.  
-You can use a docker command `$ docker ps` or a wocker command `$ wocker ps` (alias) to list running containers.  
-Note: The initial Wocker container's name after your first `$ vagrant up` is "wocker".  
+
+e.g. `$ wocker stop wocker`
+
+`CONTAINER` can be a name or ID of a container. You can use a docker command `$ docker ps` or a wocker command `$ wocker ps` (alias) to list running containers.
+
+__Note:__ The initial Wocker container's name after your first `$ vagrant up` is "wocker".
 
 
-__3. Use a wocker command to run a new Wocker container__  
+### 3. Use a wocker command to run a new Wocker container
+
 ```
 core@wocker ~ $ wocker run
 ```
-You can use the name option to assign a specific name to the container.  
+
+You can use the name option to assign a specific name to the container.
+
 e.g. `$ wocker run --name wp`
 
 ## Restart a stopped Wocker container (1 SECONDS)
 
 Before a restart, you must stop or remove the running Wocker container via Wocker command line.
 
-__1. Connect to the guest machine via SSH__  
+### 1. Connect to the guest machine via SSH
+
 ```
 $ vagrant ssh
 ```
 
-__2. Use Wocker commands to stop or remove the running Wocker container__  
+### 2. Use Wocker commands to stop or remove the running Wocker container
+
 ```
 core@wocker ~ $ wocker stop CONTAINER
 ```
+
 or
+
 ```
 core@wocker ~ $ wocker kill CONTAINER
 ```
+
 or
+
 ```
 core@wocker ~ $ wocker rm CONTAINER
 ```
-`CONTAINER` can be a name or ID of a container.  
 
-__3. Use a wocker command to restart a stopped Wocker container__  
+`CONTAINER` can be a name or ID of a container.
+
+### 3. Use a wocker command to restart a stopped Wocker container
+
 ```
 core@wocker ~ $ wocker start CONTAINER
 ```
-e.g. `$ wocker start wocker`  
-`CONTAINER` can be a name or ID of a container.  
-You can use a docker command `$ docker ps -a` or a wocker command `$ wocker ps -a` (alias) to list all containers including stopped ones.  
+
+e.g. `$ wocker start wocker`
+
+`CONTAINER` can be a name or ID of a container. You can use a docker command `$ docker ps -a` or a wocker command `$ wocker ps -a` (alias) to list all containers including stopped ones.
 
 ## Shutdown Wocker
 
 Before the shutdown, you must stop or remove the running Wocker container via Wocker command line.
 
-__1. Connect to the guest machine via SSH__  
+### 1. Connect to the guest machine via SSH
+
 ```
 $ vagrant ssh
 ```
 
-__2. Use Wocker commands to stop or remove the running Wocker container__  
+### 2. Use Wocker commands to stop or remove the running Wocker container
+
 ```
 core@wocker ~ $ wocker stop CONTAINER
 ```
+
 or
+
 ```
 core@wocker ~ $ wocker kill CONTAINER
 ```
+
 or
+
 ```
 core@wocker ~ $ wocker rm CONTAINER
 ```
-`CONTAINER` can be a name or ID of a container.  
 
-__3. Exit from the guest machine__  
+`CONTAINER` can be a name or ID of a container.
+
+### 3. Exit from the guest machine
+
 ```
 core@wocker ~ $ exit
 ```
 
-__4. Shutdown the guest machine__  
+### 4. Shutdown the guest machine
+
 ```
 $ vagrant halt
 ```
 
 ## Restart Wocker
 
-__1. Start the guest machine__  
+### 1. Start the guest machine
+
 ```
 $ vagrant up
 ```
 
-__2. Connect to the guest machine via SSH__  
+### 2. Connect to the guest machine via SSH
+
 ```
 $ vagrant ssh
 ```
 
-__3. Use a wocker command to restart a stopped Wocker container__  
+### 3. Use a wocker command to restart a stopped Wocker container
+
 ```
 core@wocker ~ $ wocker start CONTAINER
 ```
-`CONTAINER` can be a name or ID of a container.  
+
+`CONTAINER` can be a name or ID of a container.

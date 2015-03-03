@@ -10,7 +10,7 @@
 body {
 	line-height: 1.6;
 	color: $font_color;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Muli', sans-serif;
 	font-weight: 300;
 }
 
@@ -23,14 +23,16 @@ a {
 	}
 }
 
-p {
-	font-size: $p_font_size;
-	margin: ($p_font_size * 1) 0;
+strong {
+	font-weight: 700;
 }
 
-strong {
-	// font-family: 'Quicksand', sans-serif;
-	font-weight: 700;
+p {
+	margin: ($p_font_size * 1) 0;
+
+	strong {
+		font-weight: 400;
+	}
 }
 
 h1 {
@@ -105,17 +107,54 @@ pre {
 }
 
 p,
-li {
+li,
+dt,
+dd {
 	code {
-		// margin: 0 0.5em;
 		padding: 0.15em 0.4em;
-		vertical-align: baseline;
+		white-space: nowrap;
 	}
 }
 
 pre {
 	margin: ($p_font_size * 1) 0;
 	padding: $p_font_size;
+}
+
+li {
+
+	&:before {
+		content: "-";
+		color: $link_color;
+		margin-right: 0.5em;
+	}
+}
+
+dl.dl_inline {
+
+	dt {
+		float: left;
+		max-width: 50%;
+		margin-right: 0.5em;
+
+		&:before {
+			content: "-";
+			color: $brand_color;
+			margin-right: 0.5em;
+		}
+	}
+
+	dd {
+		overflow: hidden;
+	}
+}
+
+@for $i from 1 through 5 {
+	dl.dl_#{$i * 10} {
+		dt {
+			width: $i * 10%;
+		}
+	}
 }
 
 .site-header {
@@ -133,38 +172,17 @@ pre {
 	}
 }
 
-// .site-content {
+.site-footer {
+	border-top: 1px solid $border_color;
+	background: $footer_bg_color;
+	margin-top: 100px;
+	padding: 20px 0;
+	text-align: center;
 
-// 	h1 {
-// 		text-indent: -1.15em;
-
-// 		&:before {
-// 			content: "#";
-// 			color: $brand_color;
-// 			margin-right: 0.5em;
-// 		}
-// 	}
-
-// 	h2 {
-// 		text-indent: -1.8em;
-
-// 		&:before {
-// 			content: "##";
-// 			color: $brand_color;
-// 			margin-right: 0.5em;
-// 		}
-// 	}
-
-// 	h3 {
-// 		text-indent: -2.45em;
-
-// 		&:before {
-// 			content: "###";
-// 			color: $brand_color;
-// 			margin-right: 0.5em;
-// 		}
-// 	}
-// }
+	p {
+		margin: 0;
+	}
+}
 
 .inner {
 	width: 960px;
