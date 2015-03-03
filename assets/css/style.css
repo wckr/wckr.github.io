@@ -178,6 +178,7 @@ p strong {
 
 /* line 38, ../_sass/style.scss */
 h1 {
+  color: deepskyblue;
   font-family: "Quicksand", sans-serif;
   font-size: 64px;
   font-weight: 300;
@@ -187,14 +188,15 @@ h1 {
   border-bottom: 1px dotted #eee;
   padding: 32px 0;
 }
-/* line 48, ../_sass/style.scss */
+/* line 49, ../_sass/style.scss */
 h1:first-child {
   border-top: 0;
   border-bottom: 0;
 }
 
-/* line 54, ../_sass/style.scss */
+/* line 55, ../_sass/style.scss */
 h2 {
+  color: deepskyblue;
   font-family: "Quicksand", sans-serif;
   font-size: 48px;
   font-weight: 300;
@@ -204,13 +206,13 @@ h2 {
   border-bottom: 1px dotted #eee;
   padding: 24px 0;
 }
-/* line 64, ../_sass/style.scss */
+/* line 66, ../_sass/style.scss */
 h2:first-child {
   border-top: 0;
   margin-top: 0;
 }
 
-/* line 70, ../_sass/style.scss */
+/* line 72, ../_sass/style.scss */
 h3 {
   font-family: "Quicksand", sans-serif;
   font-size: 32px;
@@ -219,7 +221,7 @@ h3 {
   margin: 32px 0 16px;
 }
 
-/* line 78, ../_sass/style.scss */
+/* line 80, ../_sass/style.scss */
 h4 {
   font-family: "Quicksand", sans-serif;
   font-size: 25.6px;
@@ -228,7 +230,7 @@ h4 {
   margin: 25.6px 0 12.8px;
 }
 
-/* line 86, ../_sass/style.scss */
+/* line 88, ../_sass/style.scss */
 h5 {
   font-family: "Quicksand", sans-serif;
   font-size: 19.2px;
@@ -237,7 +239,7 @@ h5 {
   margin: 19.2px 0 9.6px;
 }
 
-/* line 94, ../_sass/style.scss */
+/* line 96, ../_sass/style.scss */
 h6 {
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
@@ -246,7 +248,7 @@ h6 {
   margin: 16px 0 8px;
 }
 
-/* line 102, ../_sass/style.scss */
+/* line 104, ../_sass/style.scss */
 code,
 pre {
   color: #fff;
@@ -256,7 +258,7 @@ pre {
   border-radius: 4px;
 }
 
-/* line 113, ../_sass/style.scss */
+/* line 115, ../_sass/style.scss */
 p code,
 li code,
 dt code,
@@ -265,70 +267,86 @@ dd code {
   white-space: nowrap;
 }
 
-/* line 119, ../_sass/style.scss */
+/* line 121, ../_sass/style.scss */
 pre {
   margin: 16px 0;
   padding: 16px;
 }
 
-/* line 126, ../_sass/style.scss */
+/* line 128, ../_sass/style.scss */
 li:before {
   content: "-";
   color: deepskyblue;
   margin-right: 0.5em;
 }
 
-/* line 135, ../_sass/style.scss */
+/* line 137, ../_sass/style.scss */
 dl.dl_inline dt {
   float: left;
   max-width: 50%;
   margin-right: 0.5em;
 }
-/* line 140, ../_sass/style.scss */
+/* line 142, ../_sass/style.scss */
 dl.dl_inline dt:before {
   content: "-";
   color: #33ccff;
   margin-right: 0.5em;
 }
-/* line 147, ../_sass/style.scss */
+/* line 149, ../_sass/style.scss */
 dl.dl_inline dd {
   overflow: hidden;
 }
 
-/* line 154, ../_sass/style.scss */
+/* line 156, ../_sass/style.scss */
 dl.dl_10 dt {
   width: 10%;
 }
 
-/* line 154, ../_sass/style.scss */
+/* line 156, ../_sass/style.scss */
 dl.dl_20 dt {
   width: 20%;
 }
 
-/* line 154, ../_sass/style.scss */
+/* line 156, ../_sass/style.scss */
 dl.dl_30 dt {
   width: 30%;
 }
 
-/* line 154, ../_sass/style.scss */
+/* line 156, ../_sass/style.scss */
 dl.dl_40 dt {
   width: 40%;
 }
 
-/* line 154, ../_sass/style.scss */
+/* line 156, ../_sass/style.scss */
 dl.dl_50 dt {
   width: 50%;
 }
 
-/* line 160, ../_sass/style.scss */
+/* line 162, ../_sass/style.scss */
+.inner {
+  width: 960px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+/* line 168, ../_sass/style.scss */
+.inner > .site-description,
+.inner > .site-main,
+.inner > .site-aside {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+/* line 176, ../_sass/style.scss */
 .site-header {
   padding: 40px;
   background: #33ccff url(../images/header-bg.jpg) no-repeat center center;
   background-size: cover;
   color: #fff;
 }
-/* line 166, ../_sass/style.scss */
+/* line 182, ../_sass/style.scss */
 .site-header h1 {
+  color: #fff;
   font-size: 64px;
   font-weight: 300;
   margin: 0;
@@ -336,49 +354,7 @@ dl.dl_50 dt {
   border: 0;
 }
 
-/* line 175, ../_sass/style.scss */
-.site-footer {
-  border-top: 1px solid #eee;
-  background: #fff;
-  margin-top: 100px;
-  padding: 20px 0;
-  text-align: center;
-}
-/* line 182, ../_sass/style.scss */
-.site-footer p {
-  margin: 0;
-}
-
-/* line 187, ../_sass/style.scss */
-.inner {
-  width: 960px;
-  margin: auto;
-  padding: 0 10px;
-  overflow: hidden;
-}
-/* line 193, ../_sass/style.scss */
-.inner > .site-description,
-.inner > .main,
-.inner > .aside {
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-/* line 201, ../_sass/style.scss */
-.main {
-  float: left;
-  width: 75%;
-  padding: 20px 10px;
-}
-
-/* line 207, ../_sass/style.scss */
-.aside {
-  float: right;
-  width: 25%;
-  padding: 20px 10px;
-}
-
-/* line 213, ../_sass/style.scss */
+/* line 192, ../_sass/style.scss */
 .site-description {
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
@@ -388,7 +364,67 @@ dl.dl_50 dt {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 222, ../_sass/style.scss */
+/* line 201, ../_sass/style.scss */
 .site-description strong {
   font-weight: 700;
+}
+
+/* line 206, ../_sass/style.scss */
+.site-footer {
+  border-top: 1px solid #eee;
+  background: #fff;
+  margin-top: 100px;
+  padding: 20px 0;
+  text-align: center;
+}
+/* line 213, ../_sass/style.scss */
+.site-footer p {
+  margin: 0;
+}
+
+/* line 218, ../_sass/style.scss */
+.site-main {
+  float: left;
+  width: 75%;
+  padding: 20px 10px;
+}
+
+/* line 224, ../_sass/style.scss */
+.site-aside {
+  float: right;
+  width: 25%;
+  padding: 20px 10px;
+}
+
+/* line 230, ../_sass/style.scss */
+.site-nav {
+  padding: 20px 0;
+}
+/* line 233, ../_sass/style.scss */
+.site-nav > ul {
+  border-left: 1px solid #eee;
+}
+/* line 238, ../_sass/style.scss */
+.site-nav > ul > li:before {
+  content: "";
+  margin: 0;
+}
+/* line 243, ../_sass/style.scss */
+.site-nav > ul > li.active {
+  border-left: 4px solid #33ccff;
+}
+/* line 246, ../_sass/style.scss */
+.site-nav > ul > li.active > a {
+  color: #333;
+}
+/* line 251, ../_sass/style.scss */
+.site-nav > ul > li > a {
+  display: block;
+  padding: 0.5em 0 0.5em 20px;
+}
+/* line 255, ../_sass/style.scss */
+.site-nav > ul > li > a:hover {
+  text-decoration: none;
+  background: #33ccff;
+  color: #fff;
 }
