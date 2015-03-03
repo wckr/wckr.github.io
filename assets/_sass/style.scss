@@ -43,8 +43,7 @@ h1 {
 	line-height: 1.25;
 	margin: $h1_font_size 0 ($h1_font_size / 2);
 	border-top: 1px solid $border_color;
-	border-bottom: 1px dotted $border_color;
-	padding: ($h1_font_size / 2) 0;
+	padding: ($h1_font_size / 2) 0 0;
 
 	&:first-child {
 		border-top: 0;
@@ -60,8 +59,7 @@ h2 {
 	line-height: 1.25;
 	margin: $h2_font_size 0 ($h2_font_size / 2);
 	border-top: 1px solid $border_color;
-	border-bottom: 1px dotted $border_color;
-	padding: ($h2_font_size / 2) 0;
+	padding: ($h2_font_size / 2) 0 0;
 
 	&:first-child {
 		border-top: 0;
