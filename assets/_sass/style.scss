@@ -162,22 +162,15 @@ dl.dl_inline {
 .inner {
 	width: 960px;
 	margin: auto;
-	padding: 0 10px;
 	overflow: hidden;
-
-	> .site-description,
-	> .site-main,
-	> .site-aside {
-		margin-left: -10px;
-		margin-right: -10px;
-	}
 }
 
 .site-header {
-	padding: 40px;
+	padding: 40px 0;
 	background: $brand_color url(../images/header-bg.jpg) no-repeat center center;
 	background-size: cover;
 	color: #fff;
+	min-width: 960px;
 
 	h1 {
 		color: #fff;
@@ -200,7 +193,6 @@ dl.dl_inline {
 .site-description {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 300;
-	padding: 0 10px;
 	margin-top: 0;
 	margin-bottom: 0;
 
@@ -212,11 +204,13 @@ dl.dl_inline {
 .site-header-main {
 	float: left;
 	width: 75%;
+	padding: 0 10px;
 }
 
 .site-header-aside {
 	float: right;
 	width: 25%;
+	padding: 0 10px;
 
 	a {
 		font-family: 'Quicksand', sans-serif;
@@ -248,7 +242,7 @@ dl.dl_inline {
 
 .site-header-below {
 	height: 52px;
-	margin: 40px -40px -40px;
+	margin: 40px 0 -40px;
 	padding: 10px 0 15px;
 	background: #ecf0f1;
 	background: #fff;
@@ -283,6 +277,7 @@ dl.dl_inline {
 	background: $footer_bg_color;
 	padding: 20px 0;
 	text-align: center;
+	min-width: 960px;
 
 	p {
 		margin: 0;
