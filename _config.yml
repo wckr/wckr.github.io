@@ -14,7 +14,7 @@ images_dir: /assets/images
 css_dir: /assets/css
 js_dir: /assets/js
 
-ogp_image: ogp-image.png
+ogp_image: /ogp-image.png
 
 # Build settings
 markdown: redcarpet
