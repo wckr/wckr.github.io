@@ -28,9 +28,10 @@ $ git clone https://github.com/ixkaito/wocker.git && cd wocker
 
 ### 5. Start up Wocker
 
-```javascript
+```
 $ vagrant up
 ```
+
 This could take a while on the first run as your local machine downloads the required files. Watch as the script ends, as an administrator or su password may be required.
 
 ### 6. Visit following site in your browser
@@ -77,10 +78,11 @@ This could take a while on the first run as your local machine downloads the req
 <dl class="dl_inline dl_20">
   <dt>Local machine:</dt>
   <dd><code>data</code></dd>
-  
+
   <dt>Guest machine:</dt>
   <dd><code>/home/core/data</code></dd>
 </dl>
+
 ## Run a new Wocker container (3 SECONDS)
 
 Before running a new one, you must stop or remove the running Wocker container via Wocker command line.
