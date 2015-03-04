@@ -162,27 +162,28 @@ img {
   font-size: 1.25em;
   vertical-align: middle;
 }
-/* line 32, ../_sass/_icon.scss */
-[class^="icon-"]:hover, [class*=" icon-"]:hover {
+
+/* line 35, ../_sass/_icon.scss */
+a[class^="icon-"]:hover, a[class*=" icon-"]:hover {
   text-decoration: none;
 }
 
-/* line 37, ../_sass/_icon.scss */
+/* line 40, ../_sass/_icon.scss */
 .icon-wocker:before {
   content: "\e600";
 }
 
-/* line 41, ../_sass/_icon.scss */
+/* line 44, ../_sass/_icon.scss */
 .icon-github:before {
   content: "\e601";
 }
 
-/* line 45, ../_sass/_icon.scss */
+/* line 48, ../_sass/_icon.scss */
 .icon-facebook:before {
   content: "\e602";
 }
 
-/* line 49, ../_sass/_icon.scss */
+/* line 52, ../_sass/_icon.scss */
 .icon-twitter:before {
   content: "\e603";
 }
@@ -460,10 +461,6 @@ dl.dl_50 dt {
 .site-nav {
   padding: 20px 0;
 }
-/* line 233, ../_sass/style.scss */
-.site-nav > ul {
-  border-left: 1px solid #eee;
-}
 /* line 238, ../_sass/style.scss */
 .site-nav > ul > li:before {
   content: "";
@@ -489,4 +486,10 @@ dl.dl_50 dt {
   text-decoration: none;
   background: #33ccff;
   color: #fff;
+}
+
+/* line 267, ../_sass/style.scss */
+.sns {
+  padding-left: 20px;
+  font-size: 19.2px;
 }

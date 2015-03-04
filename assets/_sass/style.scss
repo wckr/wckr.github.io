@@ -231,7 +231,7 @@ dl.dl_inline {
 	padding: 20px 0;
 
 	> ul {
-		border-left: 1px solid $border_color;
+		// border-left: 1px solid $border_color;
 
 		> li {
 
@@ -262,4 +262,9 @@ dl.dl_inline {
 			}
 		}
 	}
+}
+
+.sns {
+	padding-left: 20px;
+	font-size: $p_font_size * 1.2;
 }

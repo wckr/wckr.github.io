@@ -28,6 +28,9 @@
 		font-size: 1.25em;
 		vertical-align: middle;
 	}
+}
+
+a[class^="icon-"], a[class*=" icon-"] {
 
 	&:hover {
 		text-decoration: none;
