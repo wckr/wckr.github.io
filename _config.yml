@@ -8,7 +8,7 @@ twitter_user: ixkaito
 
 baseurl: /wocker
 url: http://ixkaito.github.io
-description: Wocker is a Docker-based rapid development environment of WordPress. IT TAKES JUST 3 SECONDS TO CREATE A NEW ONE!
+description: Docker-based rapid development environment of WordPress. IT TAKES JUST 3 SECONDS TO CREATE A NEW ONE!
 
 images_dir: /assets/images
 css_dir: /assets/css
