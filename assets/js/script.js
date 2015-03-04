@@ -15,7 +15,8 @@ $(function() {
     var affixH    = $affix.height();
     var affixTop  = $affix.offset().top;
     var scrlTop   = $(window).scrollTop();
-    var index, text;
+    var navsAbove = 1;
+    var index, text, h2Top, h2NextTop, $navsItem;
 
     $h2.each(function() {
       index = $h2.index(this);
@@ -40,7 +41,6 @@ $(function() {
     $(window).on('scroll', function() {
       scrlTop = $(window).scrollTop();
       affixH  = $affix.height();
-      console.log( 'scrlTop: ' + scrlTop + ', affixTop: ' + affixTop + ', footerTop: ' + footerTop + ', affixH: ' + affixH);
       if ( scrlTop > affixTop && scrlTop <= (footerTop - affixH) ) {
         $affix.removeClass('affix-bottom').addClass('affix');
       } else if ( scrlTop > affixTop && scrlTop > (footerTop - affixH) ) {
@@ -48,6 +48,26 @@ $(function() {
       } else {
         $affix.removeClass('affix');
       }
+
+      $h2.each(function() {
+        index = $h2.index(this);
+        $navsItem = $navs.find('li');
+        h2Top = Math.floor($(this).offset().top);
+        h2FirstTop = Math.floor($h2.eq(0).offset().top);
+        if (index === $h2.length - 1) {
+          h2NextTop = $('body').height();
+        } else {
+          h2NextTop = Math.floor($h2.eq(index + 1).offset().top);
+        }
+
+        if ( scrlTop === 0 ) {
+          $navsItem.removeClass('active');
+          $navsItem.eq(0).addClass('active');
+        } else if ( scrlTop >= (h2Top - $(window).height() / 2) && scrlTop < (h2NextTop - $(window).height() / 2) ) {
+          $navsItem.removeClass('active');
+          $navsItem.eq(index + navsAbove).addClass('active');
+        }
+      });
     });
 
   })();
