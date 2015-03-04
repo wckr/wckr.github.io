@@ -1,8 +1,10 @@
 # Site settings
 title: Wocker
 
+github_username: ixkaito
+github_repository: ixkaito/wocker
+facebook_username: kite.koga
 twitter_username: ixkaito
-github_username:  ixkaito
 
 baseurl: "/wocker"
 url: "http://ixkaito.github.io"

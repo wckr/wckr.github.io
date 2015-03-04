@@ -192,14 +192,49 @@ dl.dl_inline {
 .site-description {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 300;
-	float: left;
-	width: 75%;
 	padding: 0 10px;
 	margin-top: 0;
 	margin-bottom: 0;
 
 	strong {
 		font-weight: 700;
+	}
+}
+
+.site-header-main {
+	float: left;
+	width: 75%;
+}
+
+.site-header-aside {
+	float: right;
+	width: 25%;
+
+	a {
+		font-family: 'Quicksand', sans-serif;
+		font-size: $p_font_size * 0.9;
+		margin: auto;
+		display: block;
+		width: 130px;
+		height: 130px;
+		border: 2px solid #fff;
+		color: #fff;
+		padding-top: 37px;
+		text-align: center;
+		@include border-radius(130px);
+
+		.icon-github {
+			font-size: 18px;
+			font-weight: 700;
+
+			&:before {
+				vertical-align: -3px;
+			}
+		}
+
+		&:hover {
+			text-decoration: none;
+		}
 	}
 }
 
@@ -241,11 +276,11 @@ dl.dl_inline {
 			}
 
 			&.active {
-				border-left: 4px solid $brand_color;
+				border-left: 2px solid $brand_color;
 
 				> a {
 					color: $font_color;
-					padding-left: (20px - 4px);
+					padding-left: (20px - 2px);
 				}
 			}
 
