@@ -186,6 +186,14 @@ dl.dl_inline {
 		margin: 0;
 		padding: 0;
 		border: 0;
+
+		a {
+			color: inherit;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
 	}
 }
 

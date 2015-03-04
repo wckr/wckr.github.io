@@ -411,8 +411,16 @@ dl.dl_50 dt {
   padding: 0;
   border: 0;
 }
+/* line 190, ../_sass/style.scss */
+.site-header h1 a {
+  color: inherit;
+}
+/* line 193, ../_sass/style.scss */
+.site-header h1 a:hover {
+  text-decoration: none;
+}
 
-/* line 192, ../_sass/style.scss */
+/* line 200, ../_sass/style.scss */
 .site-description {
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
@@ -420,23 +428,23 @@ dl.dl_50 dt {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 199, ../_sass/style.scss */
+/* line 207, ../_sass/style.scss */
 .site-description strong {
   font-weight: 700;
 }
 
-/* line 204, ../_sass/style.scss */
+/* line 212, ../_sass/style.scss */
 .site-header-main {
   float: left;
   width: 75%;
 }
 
-/* line 209, ../_sass/style.scss */
+/* line 217, ../_sass/style.scss */
 .site-header-aside {
   float: right;
   width: 25%;
 }
-/* line 213, ../_sass/style.scss */
+/* line 221, ../_sass/style.scss */
 .site-header-aside a {
   font-family: 'Quicksand', sans-serif;
   font-size: 14.4px;
@@ -452,40 +460,40 @@ dl.dl_50 dt {
   -webkit-border-radius: 130px;
   border-radius: 130px;
 }
-/* line 226, ../_sass/style.scss */
+/* line 234, ../_sass/style.scss */
 .site-header-aside a .icon-github {
   font-size: 18px;
   font-weight: 700;
 }
-/* line 230, ../_sass/style.scss */
+/* line 238, ../_sass/style.scss */
 .site-header-aside a .icon-github:before {
   vertical-align: -3px;
 }
-/* line 235, ../_sass/style.scss */
+/* line 243, ../_sass/style.scss */
 .site-header-aside a:hover {
   text-decoration: none;
 }
 
-/* line 241, ../_sass/style.scss */
+/* line 249, ../_sass/style.scss */
 .site-footer {
   border-top: 1px solid #eee;
   background: #fff;
   padding: 20px 0;
   text-align: center;
 }
-/* line 247, ../_sass/style.scss */
+/* line 255, ../_sass/style.scss */
 .site-footer p {
   margin: 0;
 }
 
-/* line 252, ../_sass/style.scss */
+/* line 260, ../_sass/style.scss */
 .site-main {
   float: left;
   width: 75%;
   padding: 20px 10px 150px;
 }
 
-/* line 258, ../_sass/style.scss */
+/* line 266, ../_sass/style.scss */
 .site-aside {
   position: relative;
   float: right;
@@ -493,38 +501,38 @@ dl.dl_50 dt {
   padding: 20px 10px;
 }
 
-/* line 265, ../_sass/style.scss */
+/* line 273, ../_sass/style.scss */
 .site-nav {
   padding: 20px 0;
 }
-/* line 273, ../_sass/style.scss */
+/* line 281, ../_sass/style.scss */
 .site-nav > ul > li:before {
   content: "";
   margin: 0;
 }
-/* line 278, ../_sass/style.scss */
+/* line 286, ../_sass/style.scss */
 .site-nav > ul > li.active {
   border-left: 2px solid #33ccff;
 }
-/* line 281, ../_sass/style.scss */
+/* line 289, ../_sass/style.scss */
 .site-nav > ul > li.active > a {
   color: #333;
   padding-left: 18px;
 }
-/* line 287, ../_sass/style.scss */
+/* line 295, ../_sass/style.scss */
 .site-nav > ul > li > a {
   display: block;
   padding: 0.5em 0 0.5em 20px;
   line-height: 1.25;
 }
-/* line 292, ../_sass/style.scss */
+/* line 300, ../_sass/style.scss */
 .site-nav > ul > li > a:hover {
   text-decoration: none;
   background: #33ccff;
   color: #fff;
 }
 
-/* line 302, ../_sass/style.scss */
+/* line 310, ../_sass/style.scss */
 .sns {
   padding-left: 20px;
   font-size: 19.2px;
