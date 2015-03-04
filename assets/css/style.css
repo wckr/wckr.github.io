@@ -137,14 +137,26 @@ img {
   vertical-align: top;
 }
 
-/* line 6, ../_sass/style.scss */
+/* line 3, ../_sass/_js.scss */
+.affix {
+  position: fixed;
+  top: 0;
+}
+
+/* line 8, ../_sass/_js.scss */
+.affix-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 7, ../_sass/style.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 10, ../_sass/style.scss */
+/* line 11, ../_sass/style.scss */
 body {
   line-height: 1.6;
   color: #333;
@@ -152,31 +164,31 @@ body {
   font-weight: 300;
 }
 
-/* line 17, ../_sass/style.scss */
+/* line 18, ../_sass/style.scss */
 a {
   color: deepskyblue;
   text-decoration: none;
 }
-/* line 21, ../_sass/style.scss */
+/* line 22, ../_sass/style.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 26, ../_sass/style.scss */
+/* line 27, ../_sass/style.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 30, ../_sass/style.scss */
+/* line 31, ../_sass/style.scss */
 p {
   margin: 16px 0;
 }
-/* line 33, ../_sass/style.scss */
+/* line 34, ../_sass/style.scss */
 p strong {
   font-weight: 400;
 }
 
-/* line 38, ../_sass/style.scss */
+/* line 39, ../_sass/style.scss */
 h1 {
   color: deepskyblue;
   font-family: "Quicksand", sans-serif;
@@ -187,13 +199,13 @@ h1 {
   border-top: 1px solid #eee;
   padding: 32px 0 0;
 }
-/* line 48, ../_sass/style.scss */
+/* line 49, ../_sass/style.scss */
 h1:first-child {
   border-top: 0;
   border-bottom: 0;
 }
 
-/* line 54, ../_sass/style.scss */
+/* line 55, ../_sass/style.scss */
 h2 {
   color: deepskyblue;
   font-family: "Quicksand", sans-serif;
@@ -204,13 +216,13 @@ h2 {
   border-top: 1px solid #eee;
   padding: 24px 0 0;
 }
-/* line 64, ../_sass/style.scss */
+/* line 65, ../_sass/style.scss */
 h2:first-child {
   border-top: 0;
   margin-top: 0;
 }
 
-/* line 70, ../_sass/style.scss */
+/* line 71, ../_sass/style.scss */
 h3 {
   font-family: "Quicksand", sans-serif;
   font-size: 32px;
@@ -219,7 +231,7 @@ h3 {
   margin: 32px 0 16px;
 }
 
-/* line 78, ../_sass/style.scss */
+/* line 79, ../_sass/style.scss */
 h4 {
   font-family: "Quicksand", sans-serif;
   font-size: 25.6px;
@@ -228,7 +240,7 @@ h4 {
   margin: 25.6px 0 12.8px;
 }
 
-/* line 86, ../_sass/style.scss */
+/* line 87, ../_sass/style.scss */
 h5 {
   font-family: "Quicksand", sans-serif;
   font-size: 19.2px;
@@ -237,7 +249,7 @@ h5 {
   margin: 19.2px 0 9.6px;
 }
 
-/* line 94, ../_sass/style.scss */
+/* line 95, ../_sass/style.scss */
 h6 {
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
@@ -246,7 +258,7 @@ h6 {
   margin: 16px 0 8px;
 }
 
-/* line 102, ../_sass/style.scss */
+/* line 103, ../_sass/style.scss */
 code,
 pre {
   color: #fff;
@@ -256,7 +268,7 @@ pre {
   border-radius: 4px;
 }
 
-/* line 113, ../_sass/style.scss */
+/* line 114, ../_sass/style.scss */
 p code,
 li code,
 dt code,
@@ -265,69 +277,69 @@ dd code {
   white-space: nowrap;
 }
 
-/* line 119, ../_sass/style.scss */
+/* line 120, ../_sass/style.scss */
 pre {
   margin: 16px 0;
   padding: 16px;
 }
 
-/* line 126, ../_sass/style.scss */
+/* line 127, ../_sass/style.scss */
 li:before {
   content: "-";
   color: deepskyblue;
   margin-right: 0.5em;
 }
 
-/* line 135, ../_sass/style.scss */
+/* line 136, ../_sass/style.scss */
 dl.dl_inline dt {
   float: left;
   max-width: 50%;
   margin-right: 0.5em;
 }
-/* line 140, ../_sass/style.scss */
+/* line 141, ../_sass/style.scss */
 dl.dl_inline dt:before {
   content: "-";
   color: #33ccff;
   margin-right: 0.5em;
 }
-/* line 147, ../_sass/style.scss */
+/* line 148, ../_sass/style.scss */
 dl.dl_inline dd {
   overflow: hidden;
 }
 
-/* line 154, ../_sass/style.scss */
+/* line 155, ../_sass/style.scss */
 dl.dl_10 dt {
   width: 10%;
 }
 
-/* line 154, ../_sass/style.scss */
+/* line 155, ../_sass/style.scss */
 dl.dl_20 dt {
   width: 20%;
 }
 
-/* line 154, ../_sass/style.scss */
+/* line 155, ../_sass/style.scss */
 dl.dl_30 dt {
   width: 30%;
 }
 
-/* line 154, ../_sass/style.scss */
+/* line 155, ../_sass/style.scss */
 dl.dl_40 dt {
   width: 40%;
 }
 
-/* line 154, ../_sass/style.scss */
+/* line 155, ../_sass/style.scss */
 dl.dl_50 dt {
   width: 50%;
 }
 
-/* line 160, ../_sass/style.scss */
+/* line 161, ../_sass/style.scss */
 .inner {
   width: 960px;
   margin: auto;
   padding: 0 10px;
   overflow: hidden;
 }
-/* line 166, ../_sass/style.scss */
+/* line 167, ../_sass/style.scss */
 .inner > .site-description,
 .inner > .site-main,
 .inner > .site-aside {
@@ -335,14 +347,14 @@ dl.dl_50 dt {
   margin-right: -10px;
 }
 
-/* line 174, ../_sass/style.scss */
+/* line 175, ../_sass/style.scss */
 .site-header {
   padding: 40px;
   background: #33ccff url(../images/header-bg.jpg) no-repeat center center;
   background-size: cover;
   color: #fff;
 }
-/* line 180, ../_sass/style.scss */
+/* line 181, ../_sass/style.scss */
 .site-header h1 {
   color: #fff;
   font-size: 64px;
@@ -352,7 +364,7 @@ dl.dl_50 dt {
   border: 0;
 }
 
-/* line 190, ../_sass/style.scss */
+/* line 191, ../_sass/style.scss */
 .site-description {
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
@@ -362,16 +374,15 @@ dl.dl_50 dt {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 199, ../_sass/style.scss */
+/* line 200, ../_sass/style.scss */
 .site-description strong {
   font-weight: 700;
 }
 
-/* line 204, ../_sass/style.scss */
+/* line 205, ../_sass/style.scss */
 .site-footer {
   border-top: 1px solid #eee;
   background: #fff;
-  margin-top: 100px;
   padding: 20px 0;
   text-align: center;
 }
@@ -384,43 +395,46 @@ dl.dl_50 dt {
 .site-main {
   float: left;
   width: 75%;
-  padding: 20px 10px;
+  padding: 20px 10px 150px;
 }
 
 /* line 222, ../_sass/style.scss */
 .site-aside {
+  position: relative;
   float: right;
   width: 25%;
   padding: 20px 10px;
 }
 
-/* line 228, ../_sass/style.scss */
+/* line 229, ../_sass/style.scss */
 .site-nav {
   padding: 20px 0;
 }
-/* line 231, ../_sass/style.scss */
+/* line 232, ../_sass/style.scss */
 .site-nav > ul {
   border-left: 1px solid #eee;
 }
-/* line 236, ../_sass/style.scss */
+/* line 237, ../_sass/style.scss */
 .site-nav > ul > li:before {
   content: "";
   margin: 0;
 }
-/* line 241, ../_sass/style.scss */
+/* line 242, ../_sass/style.scss */
 .site-nav > ul > li.active {
   border-left: 4px solid #33ccff;
 }
-/* line 244, ../_sass/style.scss */
+/* line 245, ../_sass/style.scss */
 .site-nav > ul > li.active > a {
   color: #333;
+  padding-left: 16px;
 }
-/* line 249, ../_sass/style.scss */
+/* line 251, ../_sass/style.scss */
 .site-nav > ul > li > a {
   display: block;
   padding: 0.5em 0 0.5em 20px;
+  line-height: 1.25;
 }
-/* line 253, ../_sass/style.scss */
+/* line 256, ../_sass/style.scss */
 .site-nav > ul > li > a:hover {
   text-decoration: none;
   background: #33ccff;

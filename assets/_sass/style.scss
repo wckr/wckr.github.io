@@ -1,7 +1,8 @@
 @charset "UTF-8";
+@import "compass";
 @import "reset";
 @import "variables";
-@import "compass";
+@import "js";
 
 * {
 	@include box-sizing(border-box);
@@ -204,7 +205,6 @@ dl.dl_inline {
 .site-footer {
 	border-top: 1px solid $border_color;
 	background: $footer_bg_color;
-	margin-top: 100px;
 	padding: 20px 0;
 	text-align: center;
 
@@ -216,10 +216,11 @@ dl.dl_inline {
 .site-main {
 	float: left;
 	width: 75%;
-	padding: 20px 10px;
+	padding: 20px 10px 150px;
 }
 
 .site-aside {
+	position: relative;
 	float: right;
 	width: 25%;
 	padding: 20px 10px;
@@ -243,12 +244,14 @@ dl.dl_inline {
 
 				> a {
 					color: $font_color;
+					padding-left: (20px - 4px);
 				}
 			}
 
 			> a {
 				display: block;
 				padding: 0.5em 0 0.5em 20px;
+				line-height: 1.25;
 
 				&:hover {
 					text-decoration: none;
