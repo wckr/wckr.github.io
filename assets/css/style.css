@@ -475,25 +475,44 @@ dl.dl_50 dt {
 }
 
 /* line 249, ../_sass/style.scss */
+.site-header-below {
+  height: 52px;
+  margin: 40px -40px -40px;
+  padding: 10px 0 15px;
+  background: #ecf0f1;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+/* line 258, ../_sass/style.scss */
+.site-header-below iframe {
+  vertical-align: bottom;
+}
+/* line 262, ../_sass/style.scss */
+.site-header-below .fb-like {
+  margin-right: 30px;
+}
+
+/* line 267, ../_sass/style.scss */
 .site-footer {
   border-top: 1px solid #eee;
   background: #fff;
   padding: 20px 0;
   text-align: center;
 }
-/* line 255, ../_sass/style.scss */
+/* line 273, ../_sass/style.scss */
 .site-footer p {
   margin: 0;
 }
 
-/* line 260, ../_sass/style.scss */
+/* line 278, ../_sass/style.scss */
 .site-main {
   float: left;
   width: 75%;
   padding: 20px 10px 150px;
 }
 
-/* line 266, ../_sass/style.scss */
+/* line 284, ../_sass/style.scss */
 .site-aside {
   position: relative;
   float: right;
@@ -501,38 +520,38 @@ dl.dl_50 dt {
   padding: 20px 10px;
 }
 
-/* line 273, ../_sass/style.scss */
+/* line 291, ../_sass/style.scss */
 .site-nav {
   padding: 20px 0;
 }
-/* line 281, ../_sass/style.scss */
+/* line 299, ../_sass/style.scss */
 .site-nav > ul > li:before {
   content: "";
   margin: 0;
 }
-/* line 286, ../_sass/style.scss */
+/* line 304, ../_sass/style.scss */
 .site-nav > ul > li.active {
   border-left: 2px solid #33ccff;
 }
-/* line 289, ../_sass/style.scss */
+/* line 307, ../_sass/style.scss */
 .site-nav > ul > li.active > a {
   color: #333;
   padding-left: 18px;
 }
-/* line 295, ../_sass/style.scss */
+/* line 313, ../_sass/style.scss */
 .site-nav > ul > li > a {
   display: block;
   padding: 0.5em 0 0.5em 20px;
   line-height: 1.25;
 }
-/* line 300, ../_sass/style.scss */
+/* line 318, ../_sass/style.scss */
 .site-nav > ul > li > a:hover {
   text-decoration: none;
   background: #33ccff;
   color: #fff;
 }
 
-/* line 310, ../_sass/style.scss */
+/* line 328, ../_sass/style.scss */
 .sns {
   padding-left: 20px;
   font-size: 19.2px;

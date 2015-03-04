@@ -246,6 +246,24 @@ dl.dl_inline {
 	}
 }
 
+.site-header-below {
+	height: 52px;
+	margin: 40px -40px -40px;
+	padding: 10px 0 15px;
+	background: #ecf0f1;
+	background: #fff;
+	border-bottom: 1px solid $border_color;
+	text-align: center;
+
+	iframe {
+		vertical-align: bottom;
+	}
+
+	.fb-like {
+		margin-right: 30px;
+	}
+}
+
 .site-footer {
 	border-top: 1px solid $border_color;
 	background: $footer_bg_color;
