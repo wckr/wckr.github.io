@@ -262,6 +262,19 @@ dl.dl_inline {
 	.fb-like {
 		margin-right: 30px;
 	}
+
+	#twitter-widget-1 {
+		margin-right: 30px;
+	}
+
+	.pocket-btn {
+		display: inline-block;
+
+		iframe {
+			height: 20px
+		}
+
+	}
 }
 
 .site-footer {
