@@ -23,7 +23,7 @@ Windows is not allowed to change hosts-file. Please add "wocker.dev 172.17.8.23"
 ### 4. Clone the Wocker Repository
 
 ```
-$ git clone https://github.com/ixkaito/wocker.git && cd wocker
+$ git clone https://github.com/wocker-prj/wocker.git && cd wocker
 ```
 
 ### 5. Start up Wocker
