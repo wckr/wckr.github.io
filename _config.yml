@@ -2,12 +2,13 @@
 title: Wocker
 
 github_user: ixkaito
+github_org: wocker-prj
 github_repo: wocker
 facebook_user: kite.koga
 twitter_user: ixkaito
 
-baseurl: /wocker
-url: http://ixkaito.github.io
+baseurl: ""
+url: http://wocker-prj.github.io
 description: Docker-based rapid development environment of WordPress. IT TAKES JUST 3 SECONDS TO CREATE A NEW ONE!
 
 images_dir: /assets/images
