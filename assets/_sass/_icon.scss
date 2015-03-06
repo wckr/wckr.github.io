@@ -2,11 +2,11 @@
 
 @font-face {
 	font-family: 'wockericon';
-	src:url('../fonts/wockericon.eot?-ma84ca');
-	src:url('../fonts/wockericon.eot?#iefix-ma84ca') format('embedded-opentype'),
-		url('../fonts/wockericon.woff?-ma84ca') format('woff'),
-		url('../fonts/wockericon.ttf?-ma84ca') format('truetype'),
-		url('../fonts/wockericon.svg?-ma84ca#wockericon') format('svg');
+	src:url('../fonts/wockericon.eot?ni2nxu');
+	src:url('../fonts/wockericon.eot?#iefixni2nxu') format('embedded-opentype'),
+		url('../fonts/wockericon.woff?ni2nxu') format('woff'),
+		url('../fonts/wockericon.ttf?ni2nxu') format('truetype'),
+		url('../fonts/wockericon.svg?ni2nxu#wockericon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -51,3 +51,6 @@ a[class^="icon-"], a[class*=" icon-"] {
 	content: "\e603";
 }
 
+.icon-issues:before {
+	content: "\e604";
+}
