@@ -16,6 +16,10 @@ body {
 	font-weight: 300;
 }
 
+hr {
+	border-color: $border_color;
+}
+
 a {
 	color: $link_color;
 	text-decoration: none;
@@ -124,6 +128,8 @@ pre {
 }
 
 li {
+	text-indent: -0.9em;
+	padding-left: 0.9em;
 
 	&:before {
 		content: "-";
@@ -336,4 +342,12 @@ dl.dl_inline {
 .sns {
 	padding-left: 20px;
 	font-size: $p_font_size * 1.2;
+}
+
+.site-issues {
+	padding-left: 20px;
+
+	.site-issues-title {
+		font-size: $p_font_size * 1.2;
+	}
 }

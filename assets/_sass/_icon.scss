@@ -19,6 +19,7 @@
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
+	display: inline-block;
 
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
@@ -31,7 +32,10 @@
 a[class^="icon-"], a[class*=" icon-"] {
 
 	&:hover {
-		text-decoration: none;
+
+		&:before {
+			text-decoration: none;
+		}
 	}
 }
 
