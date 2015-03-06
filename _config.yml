@@ -1,15 +1,15 @@
 # Site settings
 title: Wocker
+description: Docker-based rapid development environment of WordPress. IT TAKES JUST 3 SECONDS TO CREATE A NEW ONE!
+
+baseurl: ""
+url: http://wckr.github.io
 
 github_user: ixkaito
 github_org: wckr
 github_repo: wocker
 facebook_user: kite.koga
 twitter_user: ixkaito
-
-baseurl: ""
-url: http://wckr.github.io
-description: Docker-based rapid development environment of WordPress. IT TAKES JUST 3 SECONDS TO CREATE A NEW ONE!
 
 images_dir: /assets/images
 css_dir: /assets/css
