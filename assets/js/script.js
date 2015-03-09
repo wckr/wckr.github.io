@@ -77,7 +77,6 @@ $(function() {
 function show_issues(res) {
   var issues  = res.data;
   var $issues = $('.js-site-issues');
-  console.log(issues);
   if (issues.length) {
     var $ul = $('<ul />');
     $(issues).each(function(){
