@@ -122,7 +122,7 @@ core@wocker ~ $ wocker stop wocker
 __Note:__ The initial Wocker container's name after your first `$ vagrant up` is "wocker".
 
 
-### 3. Use a wocker command to run a new Wocker container
+### 3. Use a Wocker command to run a new Wocker container
 
 ```
 core@wocker ~ $ wocker run
@@ -166,7 +166,7 @@ core@wocker ~ $ wocker rm CONTAINER
 
 `CONTAINER` can be a name or ID of a container.
 
-### 3. Use a wocker command to restart a stopped Wocker container
+### 3. Use a Wocker command to restart a stopped Wocker container
 
 ```
 core@wocker ~ $ wocker start CONTAINER
@@ -236,7 +236,7 @@ $ vagrant up
 $ vagrant ssh
 ```
 
-### 3. Use a wocker command to restart a stopped Wocker container
+### 3. Use a Wocker command to restart a stopped Wocker container
 
 ```
 core@wocker ~ $ wocker start CONTAINER
