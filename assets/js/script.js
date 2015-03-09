@@ -37,7 +37,7 @@ $(function() {
       width: affixW + 'px'
     });
 
-    $(window).on('scroll', function() {
+    (function affixSidebar() {
       scrlTop = $(window).scrollTop();
       affixH  = $affix.height();
       if ( scrlTop > affixTop && scrlTop <= (footerTop - affixH) ) {
@@ -66,6 +66,10 @@ $(function() {
           $navsItem.eq(i + navsAbove).addClass('active');
         }
       });
+    })();
+
+    $(window).on('scroll', function() {
+      affixSidebar();
     });
 
   })();
