@@ -130,6 +130,7 @@ pre {
 li {
 	text-indent: -0.9em;
 	padding-left: 0.9em;
+	margin-bottom: 0.5em;
 
 	&:before {
 		content: "-";
@@ -311,6 +312,7 @@ dl.dl_inline {
 		> li {
 			text-indent: 0;
 			padding-left: 0;
+			margin-bottom: 0;
 
 			&:before {
 				content: "";
@@ -348,6 +350,11 @@ dl.dl_inline {
 
 .site-issues {
 	padding-left: 20px;
+
+	li {
+		margin-bottom: 1em;
+		line-height: 1.25;
+	}
 
 	.site-issues-title {
 		font-size: $p_font_size * 1.2;
