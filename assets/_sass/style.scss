@@ -309,6 +309,8 @@ dl.dl_inline {
 		// border-left: 1px solid $border_color;
 
 		> li {
+			text-indent: 0;
+			padding-left: 0;
 
 			&:before {
 				content: "";
