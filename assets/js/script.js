@@ -37,8 +37,9 @@ $(function() {
   });
 
   function affixSidebar() {
-    scrlTop = $(window).scrollTop();
-    affixH  = $affix.height();
+    scrlTop   = $(window).scrollTop();
+    footerTop = $footer.offset().top;
+    affixH    = $affix.height();
     if ( scrlTop > affixTop && scrlTop <= (footerTop - affixH) ) {
       $affix.removeClass('affix-bottom').addClass('affix');
     } else if ( scrlTop > affixTop && scrlTop > (footerTop - affixH) ) {
