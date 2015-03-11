@@ -125,6 +125,23 @@ dd {
 pre {
 	margin: ($p_font_size * 1) 0;
 	padding: $p_font_size;
+	overflow: auto;
+}
+
+blockquote {
+	margin-top: 30px;
+	border: 1px solid $border_color;
+	background: $light_gray;
+	padding: 20px;
+
+	> h1:first-child,
+	> h2:first-child,
+	> h3:first-child,
+	> h4:first-child,
+	> h5:first-child,
+	> h6:first-child {
+		margin-top: 0;
+	}
 }
 
 li {

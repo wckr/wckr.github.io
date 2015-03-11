@@ -34,9 +34,31 @@ $ vagrant up
 
 This could take a while on the first run as your local machine downloads the required files. Watch as the script ends, as an administrator or su password may be required.
 
+
 ### 6. Visit following site in your browser
 
 [http://wocker.dev/](http://wocker.dev/)
+
+
+>### Ubuntu
+
+>If you got this message on Ubuntu:
+
+>```
+>It appears your machine doesn't support NFS, or there is not an adapter
+>to enable NFS on this machine for Vagrant.
+>```
+
+>You'll need to:
+
+>```
+>$ apt-get install nfs-kernel-server
+>```
+
+>#### More resources:
+
+>- [Ubuntu needs nfs-kernel-server installed #4](https://github.com/{{ site.github_org }}/{{ site.github_repo }}/issues/4)  
+>- [missing NFS support error on Ubuntu hosts could be improved perhaps #1534](https://github.com/mitchellh/vagrant/issues/1534)
 
 ## Credentials and Such
 
