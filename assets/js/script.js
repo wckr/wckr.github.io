@@ -1,5 +1,9 @@
 $(function() {
 
+  // $('pre code').each(function(i, block) {
+  //   hljs.highlightBlock(block);
+  // });
+
   var $content  = $('.js-site-content');
   var contentH  = $content.height();
   var $main     = $('.js-site-main');

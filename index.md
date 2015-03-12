@@ -14,7 +14,7 @@ layout: default
 
 ### 3. Install the vagrant-hostsupdater plugin.
 
-```
+```bash
 $ vagrant plugin install vagrant-hostsupdater
 ```
 
@@ -22,13 +22,13 @@ Windows is not allowed to change hosts-file. Please add "wocker.dev 172.17.8.23"
 
 ### 4. Clone the Wocker Repository
 
-```
+```bash
 $ git clone https://github.com/wckr/wocker.git && cd wocker
 ```
 
 ### 5. Start up Wocker
 
-```
+```bash
 $ vagrant up
 ```
 
@@ -51,7 +51,7 @@ This could take a while on the first run as your local machine downloads the req
 
 >You'll need to:
 
->```
+>```bash
 >$ apt-get install nfs-kernel-server
 >```
 
@@ -111,25 +111,25 @@ Before running a new one, you must stop or remove the running Wocker container v
 
 ### 1. Connect to the guest machine via SSH
 
-```
+```bash
 $ vagrant ssh
 ```
 
 ### 2. Use Wocker commands to stop or remove the running Wocker container
 
-```
+```bash
 core@wocker ~ $ wocker stop CONTAINER
 ```
 
 or
 
-```
+```bash
 core@wocker ~ $ wocker kill CONTAINER
 ```
 
 or
 
-```
+```bash
 core@wocker ~ $ wocker rm CONTAINER
 ```
 
@@ -137,7 +137,7 @@ core@wocker ~ $ wocker rm CONTAINER
 
 e.g.
 
-```
+```bash
 core@wocker ~ $ wocker stop wocker
 ```
 
@@ -146,7 +146,7 @@ __Note:__ The initial Wocker container's name after your first `$ vagrant up` is
 
 ### 3. Use a Wocker command to run a new Wocker container
 
-```
+```bash
 core@wocker ~ $ wocker run
 ```
 
@@ -154,7 +154,7 @@ You can use the name option to assign a specific name to the container.
 
 e.g.
 
-```
+```bash
 core@wocker ~ $ wocker run --name wp
 ```
 
@@ -164,25 +164,25 @@ Before a restart, you must stop or remove the running Wocker container via Wocke
 
 ### 1. Connect to the guest machine via SSH
 
-```
+```bash
 $ vagrant ssh
 ```
 
 ### 2. Use Wocker commands to stop or remove the running Wocker container
 
-```
+```bash
 core@wocker ~ $ wocker stop CONTAINER
 ```
 
 or
 
-```
+```bash
 core@wocker ~ $ wocker kill CONTAINER
 ```
 
 or
 
-```
+```bash
 core@wocker ~ $ wocker rm CONTAINER
 ```
 
@@ -190,7 +190,7 @@ core@wocker ~ $ wocker rm CONTAINER
 
 ### 3. Use a Wocker command to restart a stopped Wocker container
 
-```
+```bash
 core@wocker ~ $ wocker start CONTAINER
 ```
 
@@ -198,7 +198,7 @@ core@wocker ~ $ wocker start CONTAINER
 
 e.g.
 
-```
+```bash
 core@wocker ~ $ wocker start wocker
 ```
 
@@ -208,25 +208,25 @@ Before the shutdown, you must stop or remove the running Wocker container via Wo
 
 ### 1. Connect to the guest machine via SSH
 
-```
+```bash
 $ vagrant ssh
 ```
 
 ### 2. Use Wocker commands to stop or remove the running Wocker container
 
-```
+```bash
 core@wocker ~ $ wocker stop CONTAINER
 ```
 
 or
 
-```
+```bash
 core@wocker ~ $ wocker kill CONTAINER
 ```
 
 or
 
-```
+```bash
 core@wocker ~ $ wocker rm CONTAINER
 ```
 
@@ -234,13 +234,13 @@ core@wocker ~ $ wocker rm CONTAINER
 
 ### 3. Exit from the guest machine
 
-```
+```bash
 core@wocker ~ $ exit
 ```
 
 ### 4. Shutdown the guest machine
 
-```
+```bash
 $ vagrant halt
 ```
 
@@ -248,19 +248,19 @@ $ vagrant halt
 
 ### 1. Start the guest machine
 
-```
+```bash
 $ vagrant up
 ```
 
 ### 2. Connect to the guest machine via SSH
 
-```
+```bash
 $ vagrant ssh
 ```
 
 ### 3. Use a Wocker command to restart a stopped Wocker container
 
-```
+```bash
 core@wocker ~ $ wocker start CONTAINER
 ```
 
