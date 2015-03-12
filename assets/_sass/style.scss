@@ -106,10 +106,10 @@ h6 {
 	margin: $h6_font_size 0 ($h6_font_size / 2);
 }
 
-code,
-pre {
-	color: #fff;
+code {
+	color: #f8f8f2;
 	background: $pre_bg_color;
+	padding: 0.15em 0.4em;
 	@include border-radius(4px);
 }
 
@@ -118,15 +118,17 @@ li,
 dt,
 dd {
 	code {
-		padding: 0.15em 0.4em;
 		white-space: nowrap;
 	}
 }
 
 pre {
-	margin: ($p_font_size * 1) 0;
-	padding: $p_font_size;
-	overflow: auto;
+	code {
+		display: block;
+		margin: ($p_font_size * 1) 0;
+		padding: $p_font_size;
+		overflow: auto;
+	}
 }
 
 blockquote {

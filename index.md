@@ -45,7 +45,7 @@ This could take a while on the first run as your local machine downloads the req
 >If you got this message on Ubuntu:
 
 >```
->It appears your machine doesn't support NFS, or there is not an adapter
+>It appears your machine doesn't support NFS, or there is not an adapter  
 >to enable NFS on this machine for Vagrant.
 >```
 
