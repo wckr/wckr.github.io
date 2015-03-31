@@ -85,16 +85,6 @@ This could take a while on the first run as your local machine downloads the req
   <dd><code>wordpress</code></dd>
 </dl>
 
-### WordPress Source of a running container (Synced)
-
-<dl class="dl_inline dl_20">
-  <dt>Local machine:</dt>
-  <dd><code>data/wordpress</code></dd>
-
-  <dt>Guest machine:</dt>
-  <dd><code>/home/core/data/wordpress</code></dd>
-</dl>
-
 ### Synced Folder
 
 <dl class="dl_inline dl_20">
@@ -104,6 +94,8 @@ This could take a while on the first run as your local machine downloads the req
   <dt>Guest machine:</dt>
   <dd><code>/home/core/data</code></dd>
 </dl>
+
+Every container created through Wocker automatically has it’s volumes exposed on your local machine. Wocker exposes a container’s volume data under `data/<container's name>`.
 
 ## Run a new Wocker container (3 SECONDS)
 
