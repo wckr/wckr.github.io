@@ -190,6 +190,7 @@ dl.dl_inline {
 	width: 960px;
 	margin: auto;
 	overflow: hidden;
+	position: relative;
 }
 
 .site-header {
@@ -199,7 +200,7 @@ dl.dl_inline {
 	color: #fff;
 	min-width: 960px;
 
-	h1 {
+	.site-title {
 		color: #fff;
 		font-size: $header_logo_font_size;
 		font-weight: 300;
@@ -213,6 +214,10 @@ dl.dl_inline {
 			&:hover {
 				text-decoration: none;
 			}
+		}
+
+		.version {
+			font-size: $p_font_size;
 		}
 	}
 }
@@ -249,6 +254,10 @@ dl.dl_inline {
 		border: 2px solid #fff;
 		color: #fff;
 		padding-top: 37px;
+		position: absolute;
+		left: 87.5%;
+		top: 50%;
+		margin: -64px 0 0 -64px;
 		text-align: center;
 		@include border-radius(130px);
 
