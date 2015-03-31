@@ -196,8 +196,6 @@ core@wocker ~ $ wocker start wocker
 
 ## Shutdown Wocker
 
-Before the shutdown, you must stop or remove the running Wocker container via Wocker command line.
-
 ### 1. Connect to the guest machine via SSH
 
 ```bash
