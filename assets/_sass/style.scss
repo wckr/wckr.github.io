@@ -168,6 +168,13 @@ dl.dl_inline {
 		max-width: 50%;
 		margin-right: 0.5em;
 
+		@include media(max-width $w_lg) {
+			float: none;
+			max-width: auto;
+			margin-right: 0;
+			margin-top: 0.5em;
+		};
+
 		&:before {
 			content: "-";
 			color: $brand_color;
@@ -177,6 +184,10 @@ dl.dl_inline {
 
 	dd {
 		overflow: hidden;
+
+		@include media(max-width $w_lg) {
+			margin-left: 0.9em;
+		};
 	}
 }
 
@@ -184,6 +195,10 @@ dl.dl_inline {
 	dl.dl_#{$i * 10} {
 		dt {
 			width: $i * 10%;
+
+			@include media(max-width $w_lg) {
+				width: auto;
+			};
 		}
 	}
 }
@@ -193,6 +208,10 @@ dl.dl_inline {
 	margin: auto;
 	overflow: hidden;
 	position: relative;
+
+	@include media(max-width $w_lg) {
+		width: 100%;
+	};
 }
 
 .site-header {
@@ -325,6 +344,13 @@ dl.dl_inline {
 	float: left;
 	width: 75%;
 	padding: 20px 10px 150px;
+
+	@include media(max-width $w_lg) {
+		float: none;
+		width: auto;
+		padding-left: $gutter;
+		padding-right: $gutter;
+	};
 }
 
 .site-aside {
@@ -332,6 +358,11 @@ dl.dl_inline {
 	float: right;
 	width: 25%;
 	padding: 20px 10px;
+
+	@include media(max-width $w_lg) {
+		float: none;
+		width: auto;
+	};
 }
 
 .site-nav {
