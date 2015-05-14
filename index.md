@@ -32,7 +32,7 @@ $ git clone https://github.com/wckr/wocker.git && cd wocker
 $ vagrant up
 ```
 
-This could take a while on the first run as your local machine downloads the required files. Watch as the script ends, as an administrator or su password may be required.
+This could take a while on the first run as your local machine downloads the required files. Watch as the script ends, as an administrator or su password may be required. The first default container `wocker` will be running after the provision finishes successfully.
 
 
 ### 6. Visit following site in your browser
