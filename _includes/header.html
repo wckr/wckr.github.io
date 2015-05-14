@@ -1,3 +1,5 @@
+{% assign url = page.url | remove: 'index.html' %}
+{% capture home_url %}{{ site.baseurl }}/{% endcapture %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -48,9 +50,9 @@
 		<div class="inner">
 			<nav class="site-nav">
 				<ul>
-					<li class="active"><a href="">Get Started</a></li>
-					<li><a href="{{ site.baseurl }}/commands/">Commands</a></li>
-					<li><a href="{{ site.baseurl }}/tips/">Tips</a></li>
+					<li class="{% if page.type == 'get-started' %}active{% endif %}"><a href="{{ site.baseurl }}/">Get Started</a></li>
+					<li class="{% if page.type == 'commands' %}active{% endif %}"><a href="{{ site.baseurl }}/commands/">Commands</a></li>
+					<li class="{% if page.type == 'tips' %}active{% endif %}"><a href="{{ site.baseurl }}/tips/">Tips</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -58,17 +60,23 @@
 	<div class="site-header-middle">
 		<div class="inner">
 			<div class="site-header-main">
-				<h1 class="site-title"><a href="{{ site.baseurl }}">Wocker</a></h1>
+				{% if url == home_url %}
+				<h1 class="site-title"><a href="{{ site.baseurl }}/">Wocker</a></h1>
 				<p class="site-description">Docker-based rapid development environment of WordPress.<br />
 					<strong>IT TAKES JUST 3 SECONDS TO CREATE A NEW ONE!</strong><br />
 					Version {{ site.version }}</p>
+				{% else %}
+				<h1 class="site-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
+				{% endif %}
 			</div>
+			{% if url == home_url %}
 			<div class="site-header-aside">
 				<a href="https://github.com/{{ site.github_org }}/{{ site.github_repo }}">
 					<small>View project on</small><br />
 					<i class="icon-github">GitHub</i>
 				</a>
 			</div>
+			{% endif %}
 		</div>
 	</div>
 </header>

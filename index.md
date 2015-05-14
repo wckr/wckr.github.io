@@ -1,5 +1,6 @@
 ---
 layout: default
+type: get-started
 ---
 
 ## Get Started

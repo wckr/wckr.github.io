@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Commands
+title: Wocker Commands
+type: commands
 ---
 
 ## Get Started
