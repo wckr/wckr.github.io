@@ -11,7 +11,7 @@ $(function() {
   var $footer   = $('.js-site-footer');
   var footerTop = $footer.offset().top;
   var $aside    = $('.js-site-aside');
-  var $nav      = $('.js-site-nav');
+  var $nav      = $('.js-page-nav');
   var $navs     = $nav.children('ul');
   var $affix    = $('.js-affix');
   var affixW    = $affix.width();

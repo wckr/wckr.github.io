@@ -216,7 +216,6 @@ dl.dl_inline {
 }
 
 .site-header {
-	padding: 40px 0;
 	background: $brand_color url(../images/header-bg.jpg) no-repeat center center;
 	background-size: cover;
 	color: #fff;
@@ -242,17 +241,26 @@ dl.dl_inline {
 			font-size: $p_font_size;
 		}
 	}
+
+	.site-description {
+		font-family: 'Quicksand', sans-serif;
+		font-weight: 300;
+		margin-top: 0;
+		margin-bottom: 0;
+
+		strong {
+			font-weight: 700;
+		}
+	}
 }
 
-.site-description {
-	font-family: 'Quicksand', sans-serif;
-	font-weight: 300;
-	margin-top: 0;
-	margin-bottom: 0;
+.site-header-top {
+	border-bottom: 1px solid rgba(#000, 0.075);
+}
 
-	strong {
-		font-weight: 700;
-	}
+.site-header-middle {
+	border-top: 1px solid rgba(#fff, 0.15);
+	padding: 40px 0;
 }
 
 .site-header-main {
@@ -284,7 +292,7 @@ dl.dl_inline {
 		@include border-radius(130px);
 
 		.icon-github {
-			font-size: 18px;
+			font-size: $base_font_size * 1.8;
 			font-weight: 700;
 
 			&:before {
@@ -295,37 +303,6 @@ dl.dl_inline {
 		&:hover {
 			text-decoration: none;
 		}
-	}
-}
-
-.site-content-above {
-	height: 52px;
-	padding: 10px 0 15px;
-	background: #ecf0f1;
-	background: #fff;
-	border-bottom: 1px solid $border_color;
-	text-align: center;
-
-	iframe {
-		vertical-align: bottom;
-	}
-
-	.fb-like {
-		margin-right: 30px;
-		display: inline-block;
-	}
-
-	#twitter-widget-1 {
-		margin-right: 30px;
-	}
-
-	.pocket-btn {
-		display: inline-block;
-
-		iframe {
-			height: 20px
-		}
-
 	}
 }
 
@@ -367,6 +344,78 @@ dl.dl_inline {
 }
 
 .site-nav {
+	// font-family: 'Quicksand', sans-serif;
+
+	ul {
+		overflow: hidden;
+		padding: 0 10px;
+
+		> li {
+			float: left;
+			text-indent: 0;
+			padding-left: 0;
+			margin-bottom: 0;
+			font-size: $base_font_size * 1.3;
+
+			&:before {
+				content: "";
+				margin: 0;
+			}
+
+			> a {
+				display: block;
+				padding: 0.5em 1em;
+				color: rgba(#fff, 0.75);
+
+				&:hover {
+					text-decoration: none;
+					color: #fff;
+				}
+			}
+
+			&.active {
+
+				a {
+					background: rgba(#000, 0.075);
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+.site-content-top {
+	height: 52px;
+	padding: 10px 0 15px;
+	background: #ecf0f1;
+	background: #fff;
+	border-bottom: 1px solid $border_color;
+	text-align: center;
+
+	iframe {
+		vertical-align: bottom;
+	}
+
+	.fb-like {
+		margin-right: 30px;
+		display: inline-block;
+	}
+
+	#twitter-widget-1 {
+		margin-right: 30px;
+	}
+
+	.pocket-btn {
+		display: inline-block;
+
+		iframe {
+			height: 20px
+		}
+
+	}
+}
+
+.page-nav {
 	padding: 20px 0;
 
 	> ul {

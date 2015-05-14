@@ -11,7 +11,8 @@ $heading_color: darken($brand_color, 10%);
 $pre_bg_color: #282822;
 $footer_bg_color: #fff;
 
-$p_font_size: 16px;
+$base_font_size: 10px;
+$p_font_size: $base_font_size * 1.6;
 $h1_font_size: $p_font_size * 4;
 $h2_font_size: $p_font_size * 3;
 $h3_font_size: $p_font_size * 2;
