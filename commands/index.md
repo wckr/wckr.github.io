@@ -9,13 +9,25 @@ type: commands
 
 To list available commands, either run `wocker` with no parameters or execute `wocker help`:
 
-```bash
+```
 $ wocker
 Usage: wocker COMMAND [arg...]
 
 Commands:
 ...
 ```
+
+To list the help on any command just execute the command, followed by the `--help` option.
+
+```
+$ wocker run --help
+Usage: wocker run [--name=""] [IMAGE[:TAG]]
+
+Run a new container
+
+...
+```
+
 
 ## Commonly Used Commands
 
@@ -70,11 +82,75 @@ The main process inside the `test` container will receive `SIGKILL`, then the co
 
 ----
 
-### start
+### ps (Docker alias)
+
+```
+Usage: wocker ps [OPTIONS]
+
+List containers
+
+  -a, --all=false       Show all containers (default shows just running)
+  --before=""           Show only container created before Id or Name
+  -f, --filter=[]       Filter output based on conditions provided
+  -l, --latest=false    Show the latest created container, include non-running
+  -n=-1                 Show n last created containers, include non-running 
+  --no-trunc=false      Don't truncate output
+  -q, --quiet=false     Only display numeric IDs
+  -s, --size=false      Display total file sizes
+  --since=""            Show created since Id or Name, include non-running
+```
+
+`wocker ps` will show only running containers by default. To see all containers: `wocker ps -a`.
+
+#### Examples
+
+```
+$ wocker ps -a
+```
+
+This will list all containers including stopped.
+
+----
+
+### start (Docker alias)
+
+```
+Usage: wocker start CONTAINER
+
+Start a stopped container
+```
+
+Before a restart, you must stop or remove the running container. See `wocker ps -a` to view a list of all containers.
+
+#### Examples
+
+```
+$ wocker start test
+```
+
+This will start the `test` container.
 
 ----
 
 ### stop
+
+```
+Usage: wocker stop [OPTIONS] CONTAINER
+
+Stop a running container by sending SIGTERM and then SIGKILL after a grace period
+
+  -t, --time=10      Seconds to wait for stop before killing it
+```
+
+The main process inside the container will receive `SIGTERM`, and after a grace period, `SIGKILL`.
+
+#### Examples
+
+```
+$ wocker stop test
+```
+
+This will stop the `test` container.
 
 ----
 
