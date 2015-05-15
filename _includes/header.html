@@ -49,11 +49,11 @@
 	<div class="site-header-top">
 		<div class="inner">
 			<h1 class="site-logo"><a class="icon-wocker" href="{{ site.baseurl }}/">Wocker</a></h1>
+			{% if url != home_url %}<a class="site-header-top-github-link icon-github" href="https://github.com/{{ site.github_org }}/{{ site.github_repo }}">GitHub Project</a>{% endif %}
 			<nav class="site-nav">
 				<ul>
 					<li class="{% if page.type == 'get-started' %}active{% endif %}"><a href="{{ site.baseurl }}/">Get Started</a></li>
 					<li class="{% if page.type == 'commands' %}active{% endif %}"><a href="{{ site.baseurl }}/commands/">Commands</a></li>
-					<li class="{% if page.type == 'tips' %}active{% endif %}"><a href="{{ site.baseurl }}/tips/">Tips</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -67,7 +67,7 @@
 					<strong>IT TAKES JUST 3 SECONDS TO CREATE A NEW ONE!</strong><br />
 					Version {{ site.version }}</p>
 				{% else %}
-				<h1 class="page-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
+				<h1 class="page-title"><a href="{{ url }}">{{ page.title }}</a></h1>
 				{% endif %}
 			</div>
 			{% if url == home_url %}
