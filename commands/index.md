@@ -257,10 +257,6 @@ Inspect changes on a container's filesystem
 
 Get real time events from the server
 
-### exec
-
-Run a command in a running container
-
 ### export
 
 Stream the contents of a container as a tar archive
@@ -313,10 +309,6 @@ Lookup the public-facing port that is NAT-ed to PRIVATE_PORT
 
 Pause all processes within a container
 
-### ps
-
-List containers
-
 ### pull
 
 Pull an image or a repository from a Docker registry server
@@ -345,17 +337,9 @@ Save an image to a tar archive
 
 Search for an image on the Docker Hub
 
-### start
-
-Start a stopped container
-
 ### stats
 
 Display a live stream of one or more containers' resource usage statistics
-
-### stop
-
-Stop a running container
 
 ### tag
 
