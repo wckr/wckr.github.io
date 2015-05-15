@@ -115,7 +115,7 @@ $ apt-get install nfs-kernel-server
 
 Every container created through Wocker automatically has it’s volumes exposed on your local machine. Wocker exposes a container’s volume data under `data/<container's name>`.
 
-## Run a new Wocker container (3 SECONDS)
+## Run a New Wocker Container (3 SECONDS)
 
 Before running a new one, you must stop or remove the running Wocker container via Wocker command line.
 
@@ -168,7 +168,7 @@ e.g.
 core@wocker ~ $ wocker run --name wp
 ```
 
-## Restart a stopped Wocker container (1 SECONDS)
+## Restart a Stopped Wocker Container (1 SECONDS)
 
 Before a restart, you must stop or remove the running Wocker container via Wocker command line.
 
