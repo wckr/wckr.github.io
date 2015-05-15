@@ -64,7 +64,7 @@ Remove one or more containers
   -f, --force=false   Force the removal of a running container (uses SIGKILL)
 ```
 
-Please note that the `wocker rm` command remove containers and synced folders in your local `data` directory. Please back up the files before removing containers if you need them.
+__Note:__ the `wocker rm` command remove containers and synced folders in your local `data` directory. Please back up the files before removing containers if you need them.
 
 #### Examples
 
@@ -193,7 +193,7 @@ WP-CLI project config:
 WP-CLI version: 0.18.0
 ```
 
-Note: the `--allow-root` flag is required for WP-CLI commands in Wocker containers.
+__Note:__ the `--allow-root` flag is required for WP-CLI commands in Wocker containers.
 
 More resources about WP-CLI, please see: [http://wp-cli.org/](http://wp-cli.org/)
 

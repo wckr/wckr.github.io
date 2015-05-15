@@ -139,7 +139,7 @@ core@wocker ~ $ wocker rm -f CONTAINER
 
 `CONTAINER` can be a name or ID of a container. You can use `wocker ps` (Docker alias) to list only running containers.
 
-__Note:__ The `wocker rm -f` command forcely remove containers and synced folders in your local `data` directory. Please back up the files before removing containers if you need them.
+__Note:__ the `wocker rm -f` command forcely remove containers and synced folders in your local `data` directory. Please back up the files before removing containers if you need them.
 
 ####Example
 
@@ -188,7 +188,7 @@ core@wocker ~ $ wocker rm -f CONTAINER
 
 `CONTAINER` can be a name or ID of a container.
 
-__Note:__ The `wocker rm -f` command forcely remove containers and synced folders in your local `data` directory. Please back up the files before removing containers if you need them.
+__Note:__ the `wocker rm -f` command forcely remove containers and synced folders in your local `data` directory. Please back up the files before removing containers if you need them.
 
 #### Example
 
