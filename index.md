@@ -117,7 +117,7 @@ Every container created through Wocker automatically has it’s volumes exposed 
 
 ## Run a New Wocker Container (3 SECONDS)
 
-Before running a new one, you must stop or remove the running Wocker container via Wocker command line.
+Before running a new one, you must stop or remove the running Wocker container.
 
 ### 1. Connect to the guest machine via SSH
 
@@ -125,7 +125,7 @@ Before running a new one, you must stop or remove the running Wocker container v
 $ vagrant ssh
 ```
 
-### 2. Use Wocker commands to stop or remove the running Wocker container
+### 2. Stop or remove the running Wocker container
 
 ```bash
 core@wocker ~ $ wocker stop CONTAINER
@@ -134,43 +134,39 @@ core@wocker ~ $ wocker stop CONTAINER
 or
 
 ```bash
-core@wocker ~ $ wocker kill CONTAINER
+core@wocker ~ $ wocker rm -f CONTAINER
 ```
 
-or
+`CONTAINER` can be a name or ID of a container. You can use `wocker ps` (Docker alias) to list only running containers.
 
-```bash
-core@wocker ~ $ wocker rm CONTAINER
-```
+__Note:__ The `wocker rm -f` command forcely remove containers and synced folders in your local `data` directory. Please back up the files before removing containers if you need them.
 
-`CONTAINER` can be a name or ID of a container. You can use a docker command `$ docker ps` or a wocker command `$ wocker ps` (alias) to list running containers.
-
-e.g.
+####Example
 
 ```bash
 core@wocker ~ $ wocker stop wocker
 ```
 
-__Note:__ The initial Wocker container's name after your first `$ vagrant up` is "wocker".
+The first default container `wocker` will be running after your first `vagrant up`.
 
 
-### 3. Use a Wocker command to run a new Wocker container
+### 3. Use a Wocker command to run a new container
 
 ```bash
 core@wocker ~ $ wocker run
 ```
 
-You can use the name option to assign a specific name to the container.
+You can use the name flag to assign a specific name to the container.
 
-e.g.
+#### Example
 
 ```bash
-core@wocker ~ $ wocker run --name wp
+core@wocker ~ $ wocker run --name test
 ```
 
 ## Restart a Stopped Wocker Container (1 SECONDS)
 
-Before a restart, you must stop or remove the running Wocker container via Wocker command line.
+Before a restart, you must stop or remove the running Wocker container.
 
 ### 1. Connect to the guest machine via SSH
 
@@ -178,7 +174,7 @@ Before a restart, you must stop or remove the running Wocker container via Wocke
 $ vagrant ssh
 ```
 
-### 2. Use Wocker commands to stop or remove the running Wocker container
+### 2. Stop or remove the running Wocker container
 
 ```bash
 core@wocker ~ $ wocker stop CONTAINER
@@ -187,26 +183,28 @@ core@wocker ~ $ wocker stop CONTAINER
 or
 
 ```bash
-core@wocker ~ $ wocker kill CONTAINER
-```
-
-or
-
-```bash
-core@wocker ~ $ wocker rm CONTAINER
+core@wocker ~ $ wocker rm -f CONTAINER
 ```
 
 `CONTAINER` can be a name or ID of a container.
 
-### 3. Use a Wocker command to restart a stopped Wocker container
+__Note:__ The `wocker rm -f` command forcely remove containers and synced folders in your local `data` directory. Please back up the files before removing containers if you need them.
+
+#### Example
+
+```bash
+core@wocker ~ $ wocker stop test
+```
+
+### 3. Restart a stopped Wocker container
 
 ```bash
 core@wocker ~ $ wocker start CONTAINER
 ```
 
-`CONTAINER` can be a name or ID of a container. You can use a docker command `$ docker ps -a` or a wocker command `$ wocker ps -a` (alias) to list all containers including stopped ones.
+`CONTAINER` can be a name or ID of a container. You can use `wocker ps -a` (Docker alias) to list all containers including stopped ones.
 
-e.g.
+#### Example
 
 ```bash
 core@wocker ~ $ wocker start wocker
@@ -214,39 +212,7 @@ core@wocker ~ $ wocker start wocker
 
 ## Shutdown Wocker
 
-### 1. Connect to the guest machine via SSH
-
-```bash
-$ vagrant ssh
-```
-
-### 2. Use Wocker commands to stop or remove the running Wocker container
-
-```bash
-core@wocker ~ $ wocker stop CONTAINER
-```
-
-or
-
-```bash
-core@wocker ~ $ wocker kill CONTAINER
-```
-
-or
-
-```bash
-core@wocker ~ $ wocker rm CONTAINER
-```
-
-`CONTAINER` can be a name or ID of a container.
-
-### 3. Exit from the guest machine
-
-```bash
-core@wocker ~ $ exit
-```
-
-### 4. Shutdown the guest machine
+### 1. Shutdown the guest machine
 
 ```bash
 $ vagrant halt
@@ -266,10 +232,22 @@ $ vagrant up
 $ vagrant ssh
 ```
 
-### 3. Use a Wocker command to restart a stopped Wocker container
+### 3. Restart a stopped container or run a new container
 
 ```bash
 core@wocker ~ $ wocker start CONTAINER
 ```
 
+or
+
+```bash
+core@wocker ~ $ wocker run
+```
+
 `CONTAINER` can be a name or ID of a container.
+
+#### Example
+
+```bash
+core@wocker ~ $ wocker start wocker
+```
