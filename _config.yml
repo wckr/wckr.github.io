@@ -20,4 +20,4 @@ ogp_image: /ogp-image.png
 # Build settings
 markdown: redcarpet
 
-version: 0.3.3
+version: 0.4.0
