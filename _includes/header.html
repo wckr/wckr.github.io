@@ -48,6 +48,7 @@
 <header class="site-header">
 	<div class="site-header-top">
 		<div class="inner">
+			<h1 class="site-logo"><a class="icon-wocker" href="{{ site.baseurl }}/">Wocker</a></h1>
 			<nav class="site-nav">
 				<ul>
 					<li class="{% if page.type == 'get-started' %}active{% endif %}"><a href="{{ site.baseurl }}/">Get Started</a></li>
@@ -66,7 +67,7 @@
 					<strong>IT TAKES JUST 3 SECONDS TO CREATE A NEW ONE!</strong><br />
 					Version {{ site.version }}</p>
 				{% else %}
-				<h1 class="site-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
+				<h1 class="page-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
 				{% endif %}
 			</div>
 			{% if url == home_url %}

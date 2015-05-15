@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Wocker Tips
+title: Tips
 type: tips
 ---
 

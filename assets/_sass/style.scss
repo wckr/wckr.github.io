@@ -16,7 +16,7 @@
 body {
 	line-height: 1.6;
 	color: $font_color;
-	font-family: 'Muli', sans-serif;
+	font-family: $muli;
 	font-weight: 300;
 }
 
@@ -57,7 +57,7 @@ h1 {
 
 	&:first-child {
 		border-top: 0;
-		border-bottom: 0;
+		margin-top: 0;
 	}
 }
 
@@ -243,7 +243,7 @@ dl.dl_inline {
 	}
 
 	.site-description {
-		font-family: 'Quicksand', sans-serif;
+		font-family: $quicksand;
 		font-weight: 300;
 		margin-top: 0;
 		margin-bottom: 0;
@@ -251,6 +251,10 @@ dl.dl_inline {
 		strong {
 			font-weight: 700;
 		}
+	}
+
+	.page-title {
+		@extend .site-title;
 	}
 }
 
@@ -275,7 +279,7 @@ dl.dl_inline {
 	padding: 0 10px;
 
 	a {
-		font-family: 'Quicksand', sans-serif;
+		font-family: $quicksand;
 		font-size: $p_font_size * 0.9;
 		margin: auto;
 		display: block;
@@ -343,8 +347,27 @@ dl.dl_inline {
 	};
 }
 
+.site-logo {
+	float: left;
+	font-family: $quicksand;
+	font-size: $base_font_size * 1.8;
+	margin: 0 0 0 0;
+	padding: 0;
+
+	a {
+		display: block;
+		color: #fff;
+		padding: 0 10px;
+		line-height: $base_font_size * 3.6;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
 .site-nav {
-	// font-family: 'Quicksand', sans-serif;
+	// font-family: $quicksand;
 
 	ul {
 		overflow: hidden;
@@ -364,8 +387,9 @@ dl.dl_inline {
 
 			> a {
 				display: block;
-				padding: 0.5em 1em;
+				padding: 0 1em;
 				color: rgba(#fff, 0.75);
+				line-height: $base_font_size * 3.6;
 
 				&:hover {
 					text-decoration: none;
