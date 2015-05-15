@@ -7,7 +7,7 @@ type: commands
 
 ## Help
 
-To list available commands, either run `wocker` with no parameters or execute `wocker help`:
+To list available commands, either run `wocker` with no parameters or execute `wocker help`, `wocker --help`, or `wocker -h`:
 
 ```
 $ wocker
@@ -78,7 +78,7 @@ This will remove the `test` container and the `test` folder in your local `data`
 $ wocker rm -f test
 ```
 
-The main process inside the `test` container will receive `SIGKILL`, then the container and the synced folder will be removed.
+The main process inside the container `test` will receive `SIGKILL`, then the container and the synced folder will be removed.
 
 ----
 
@@ -104,7 +104,13 @@ List containers
 
 #### Examples
 
+```bash
+$ wocker ps
 ```
+
+This will only show the running container.
+
+```bash
 $ wocker ps -a
 ```
 
@@ -124,11 +130,11 @@ Before a restart, you must stop or remove the running container. See `wocker ps 
 
 #### Examples
 
-```
+```bash
 $ wocker start test
 ```
 
-This will start the `test` container.
+This will start the container `test`.
 
 ----
 
@@ -146,22 +152,79 @@ The main process inside the container will receive `SIGTERM`, and after a grace 
 
 #### Examples
 
-```
+```bash
 $ wocker stop test
 ```
 
-This will stop the `test` container.
+This will stop the container `test`.
 
 ----
 
 ### exec
 
+```
+Usage: wocker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+Run a command in a running container
+
+  -d, --detach=false         Detached mode: run command in the background
+  -i, --interactive=false    Keep STDIN open even if not attached
+  -t, --tty=false            Allocate a pseudo-TTY
+```
+
+The `wocker exec` command runs a new command in a running container. If the container is paused, then the `wocker exec` command will fail with an error.
+
+#### Examples
+
+```bash
+$ wocker exec -it test bash
+```
+
+This will create a new Bash session in the running container `test`. Then you can run WP-CLI or MySQL commands etc. in the container.
+
+```bash
+root@****:/var/www/wordpress# wp --allow-root --info
+PHP binary: /usr/bin/php5
+PHP version:  5.4.39-0+deb7u2
+php.ini used: /etc/php5/cli/php.ini
+WP-CLI root dir:  phar://wp-cli.phar
+WP-CLI global config: 
+WP-CLI project config:  
+WP-CLI version: 0.18.0
+```
+
+Note: the `--allow-root` flag is required for WP-CLI commands in Wocker containers.
+
 ----
 
-### update
+### update (v0.2.0 or later)
+
+```
+Usage: wocker update
+
+Update the command line and the Docker image of Wocker.
+```
+
+#### Examples
+
+```bash
+$ wocker update
+```
 
 ----
 
-### version
+### version / --version / -v
+
+```
+Usage: wocker version
+
+Show the Wocker version information
+```
+
+#### Examples
+
+```bash
+$ wocker version
+```
 
 ----
