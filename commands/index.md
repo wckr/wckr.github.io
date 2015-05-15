@@ -31,6 +31,38 @@ Run a new container
 
 ## Commonly Used Commands
 
+### version | --version | -v
+
+```
+Usage: wocker version | --version | -v
+
+Show the Wocker version information
+```
+
+#### Examples
+
+```bash
+$ wocker version
+```
+
+----
+
+### update (v0.2.0 or later)
+
+```
+Usage: wocker update
+
+Update the command line and the Docker image of Wocker.
+```
+
+#### Examples
+
+```bash
+$ wocker update
+```
+
+----
+
 ### run
 
 ```
@@ -138,7 +170,7 @@ This will start the container `test`.
 
 ----
 
-### stop
+### stop (Docker alias)
 
 ```
 Usage: wocker stop [OPTIONS] CONTAINER
@@ -160,7 +192,7 @@ This will stop the container `test`.
 
 ----
 
-### exec
+### exec (Docker alias)
 
 ```
 Usage: wocker exec [OPTIONS] CONTAINER COMMAND [ARG...]
@@ -199,34 +231,21 @@ More resources about WP-CLI, please see: [http://wp-cli.org/](http://wp-cli.org/
 
 ----
 
-### update (v0.2.0 or later)
+### destroy
 
 ```
-Usage: wocker update
+Usage: wocker destroy
 
-Update the command line and the Docker image of Wocker.
+Force remove all containers and local related files
 ```
+
+This will force remove all containers including running ones and all related files in your local `data` directory. You will receive a confirmation before the execution.
 
 #### Examples
 
 ```bash
-$ wocker update
-```
-
-----
-
-### version / --version / -v
-
-```
-Usage: wocker version
-
-Show the Wocker version information
-```
-
-#### Examples
-
-```bash
-$ wocker version
+$ wocker destroy
+Are you sure you want to remove all containers and related files? [y/N]
 ```
 
 ## Other Docker Command Aliases
