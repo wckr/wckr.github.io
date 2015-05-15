@@ -195,6 +195,8 @@ WP-CLI version: 0.18.0
 
 Note: the `--allow-root` flag is required for WP-CLI commands in Wocker containers.
 
+More resources about WP-CLI, please see: [http://wp-cli.org/](http://wp-cli.org/)
+
 ----
 
 ### update (v0.2.0 or later)
