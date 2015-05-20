@@ -19,12 +19,12 @@ $(function() {
   var affixTop  = $affix.offset().top;
   var scrlTop   = $(window).scrollTop();
   var navsAbove = 1;
-  var text, h2Top, h2NextTop, $navsItem, body, $h3;
+  var text, h2Top, h2PrevTop, h2NextTop, $navsItem, body, $h3;
 
   $h2.each(function(i) {
     text = $(this).text();
     $(this).attr('id', 'h2-' + i );
-    $navs.append('<li id="nav-h2-' + i + '"><a href="#h2-' + i + '">' + text + '</a></li>');
+    $navs.append('<li id="nav-h2-' + i + '" class="nav-h2"><a href="#h2-' + i + '">' + text + '</a></li>');
   });
 
   function h3Navs(h2, pageType) {
@@ -39,7 +39,7 @@ $(function() {
       text = $(this).text();
       text = text.replace(/ *\(.*\)/g, '');
       $(this).attr('id', 'h3-' + i);
-      $('#nav-' + h2 + ' .h3-navs').append('<li><a href="#h3-' + i + '">' + text + '</a></li>');
+      $('#nav-' + h2 + ' .h3-navs').append('<li class="nav-h3"><a href="#h3-' + i + '">' + text + '</a></li>');
     });
   }
   h3Navs('h2-1', 'commands');
@@ -70,9 +70,14 @@ $(function() {
     }
 
     $h2.each(function(i) {
-      $navsItem = $navs.find('li');
+      $navsItem = $navs.find('.nav-h2');
       h2Top = Math.floor($(this).offset().top);
       h2FirstTop = Math.floor($h2.eq(0).offset().top);
+      if (i === 0) {
+        h2PrevTop = 0;
+      } else {
+        h2PrevTop = Math.floor($h2.eq(i - 1).offset().top);
+      }
       if (i === $h2.length - 1) {
         h2NextTop = $('body').height();
       } else {
@@ -82,9 +87,15 @@ $(function() {
       if ( scrlTop === 0 ) {
         $navsItem.removeClass('active');
         $navsItem.eq(0).addClass('active');
-      } else if ( scrlTop >= (h2Top - $(window).height() / 2) && scrlTop < (h2NextTop - $(window).height() / 2) ) {
-        $navsItem.removeClass('active');
-        $navsItem.eq(i + navsAbove).addClass('active');
+      } else if ( scrlTop >= (h2Top - $(window).height() / 2) &&
+                  scrlTop < (h2NextTop - $(window).height() / 2) ) {
+        if ( scrlTop >= h2PrevTop ) {
+          $navsItem.removeClass('active');
+          $navsItem.eq(i + navsAbove).addClass('active');
+        } else {
+          $navsItem.removeClass('active');
+          $navsItem.eq(i + navsAbove - 1).addClass('active');
+        }
       }
     });
   }
