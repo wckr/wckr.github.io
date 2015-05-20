@@ -125,7 +125,7 @@ List containers
   --before=""           Show only container created before Id or Name
   -f, --filter=[]       Filter output based on conditions provided
   -l, --latest=false    Show the latest created container, include non-running
-  -n=-1                 Show n last created containers, include non-running 
+  -n=-1                 Show n last created containers, include non-running
   --no-trunc=false      Don't truncate output
   -q, --quiet=false     Only display numeric IDs
   -s, --size=false      Display total file sizes
@@ -220,8 +220,8 @@ PHP binary: /usr/bin/php5
 PHP version:  5.4.39-0+deb7u2
 php.ini used: /etc/php5/cli/php.ini
 WP-CLI root dir:  phar://wp-cli.phar
-WP-CLI global config: 
-WP-CLI project config:  
+WP-CLI global config:
+WP-CLI project config:
 WP-CLI version: 0.18.0
 ```
 

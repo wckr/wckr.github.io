@@ -19,13 +19,30 @@ $(function() {
   var affixTop  = $affix.offset().top;
   var scrlTop   = $(window).scrollTop();
   var navsAbove = 1;
-  var text, h2Top, h2NextTop, $navsItem;
+  var text, h2Top, h2NextTop, $navsItem, body, $h3;
 
   $h2.each(function(i) {
     text = $(this).text();
     $(this).attr('id', 'h2-' + i );
-    $navs.append('<li><a href="#h2-' + i + '">' + text + '</a></li>');
+    $navs.append('<li id="nav-h2-' + i + '"><a href="#h2-' + i + '">' + text + '</a></li>');
   });
+
+  function h3Navs(h2, pageType) {
+    if (pageType) {
+      body = 'body.js-' + pageType + ' ';
+    } else {
+      body = '';
+    }
+    $h3 = $(body + '.js-site-main h2#' + h2).nextUntil('h2', 'h3');
+    $('#nav-' + h2).append('<ul class="h3-navs"></ul>');
+    $h3.each(function(i) {
+      text = $(this).text();
+      text = text.replace(/ *\(.*\)/g, '');
+      $(this).attr('id', 'h3-' + i);
+      $('#nav-' + h2 + ' .h3-navs').append('<li><a href="#h3-' + i + '">' + text + '</a></li>');
+    });
+  }
+  h3Navs('h2-1', 'commands');
 
   $navs.on('click', 'li', function() {
     $navs.children('li').removeClass('active');
