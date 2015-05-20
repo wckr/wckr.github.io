@@ -447,10 +447,10 @@ dl.dl_inline {
 .page-nav {
 	padding: 20px 0;
 
-	> ul {
+	ul {
 		// border-left: 1px solid $border_color;
 
-		> li {
+		li {
 			text-indent: 0;
 			padding-left: 0;
 			margin-bottom: 0;
@@ -461,23 +461,40 @@ dl.dl_inline {
 			}
 
 			&.active {
-				border-left: 2px solid $brand_color;
 
 				> a {
 					color: $font_color;
+					border-left: 2px solid $brand_color;
 					padding-left: (20px - 2px);
 				}
 			}
 
 			> a {
 				display: block;
-				padding: 0.5em 0 0.5em 20px;
+				padding: 0.5em 0.5em 0.5em 20px;
 				line-height: 1.25;
 
 				&:hover {
 					text-decoration: none;
 					background: $brand_color;
 					color: #fff;
+				}
+			}
+
+			> ul {
+
+				> li {
+
+					&.active {
+
+						> a {
+							padding-left: (40px - 2px);
+						}
+					}
+
+					> a {
+						padding: 0.25em 0.5em 0.25em 40px;
+					}
 				}
 			}
 		}
