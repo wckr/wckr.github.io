@@ -4,6 +4,11 @@ title: Wocker Changelog
 type: changelog
 ---
 
+## 0.5.0
+
+- Add a command: `wocker wp`.
+- Enable connecting to MySQL from outside the container.
+
 ## 0.4.0
 
 - Improve the help of commands.
