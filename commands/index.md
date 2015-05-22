@@ -192,6 +192,61 @@ This will stop the container `test`.
 
 ----
 
+### wp
+
+```
+Usage: wocker wp COMMAND SUBCOMMAND arg...
+
+Execute WP-CLI commands in the running container
+See: http://wp-cli.org/
+
+Commands:
+    cache           Manage the object cache.
+    cap             Manage user capabilities.
+    cli             Get information about WP-CLI itself.
+    comment         Manage comments.
+    core            Download, install, update and otherwise manage WordPress proper.
+    cron            Manage WP-Cron events and schedules.
+    db              Perform basic database operations.
+    eval            Execute arbitrary PHP code after loading WordPress.
+    eval-file       Load and execute a PHP file after loading WordPress.
+    export          Export content to a WXR file.
+    help            Get help on a certain command.
+    import          Import content from a WXR file.
+    media           Manage attachments.
+    menu            List, create, assign, and delete menus
+    network         -
+    option          Manage options.
+    plugin          Manage plugins.
+    post            Manage posts.
+    rewrite         Manage rewrite rules.
+    role            Manage user roles.
+    scaffold        Generate code for post types, taxonomies, etc.
+    search-replace  Search/replace strings in the database.
+    shell           Interactive PHP console.
+    sidebar         Manage sidebars.
+    site            Perform site-wide operations.
+    super-admin     List, add, and remove super admins from a network.
+    term            Manage terms.
+    theme           Manage themes.
+    transient       Manage transients.
+    user            Manage users.
+    widget          Manage sidebar widgets.
+```
+
+For more information about WP-CLI commands and subcommands, please see [http://wp-cli.org/](http://wp-cli.org/).
+
+#### Examples
+
+```bash
+$ wocker wp db export
+Success: Exported to wordpress.sql
+```
+
+This will export the database to a file `wordpress.sql`.
+
+----
+
 ### exec (Docker alias)
 
 ```
