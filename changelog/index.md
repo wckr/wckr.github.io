@@ -4,6 +4,10 @@ title: Wocker Changelog
 type: changelog
 ---
 
+## 0.6.0
+
+- Add a command: `wocker theme-test`
+
 ## 0.5.0
 
 - Add a command: `wocker wp`.
