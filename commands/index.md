@@ -257,7 +257,7 @@ Import theme unit test data
   LOCALE    Select which language you want to import. `en` and `ja` are available. If omitted, `en` will be imported.
 ```
 
-The data on [Theme Unit Test](https://codex.wordpress.org/Theme_Unit_Test) (Setup > Test Environment Setup > 1) will be imported.
+The data on [Theme Unit Test](https://codex.wordpress.org/Theme_Unit_Test) page (Setup > Test Environment Setup > 1) will be imported.
 
 ```bash
 $ wocker theme-test
