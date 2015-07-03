@@ -247,6 +247,26 @@ This will export the database to a file `wordpress.sql`.
 
 ----
 
+### theme-test
+
+```
+Usage: wocker theme-test [LOCALE]
+
+Import theme unit test data
+
+  LOCALE    Select which language you want to import. `en` and `ja` are available. If omitted, `en` will be imported.
+```
+
+The data on [Theme Unit Test](https://codex.wordpress.org/Theme_Unit_Test) (Setup > Test Environment Setup > 1) will be imported.
+
+```bash
+$ wocker theme-test
+```
+
+This will import the theme unit test data from [https://wpcom-themes.svn.automattic.com/demo/theme-unit-test-data.xml](https://wpcom-themes.svn.automattic.com/demo/theme-unit-test-data.xml).
+
+----
+
 ### exec (Docker alias)
 
 ```
