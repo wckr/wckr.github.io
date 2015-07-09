@@ -109,7 +109,14 @@ h6 {
 	margin: $h6_font_size 0 ($h6_font_size / 2);
 }
 
+pre, code, kbd, samp, tt{
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
 code {
+	// font-family: $code;
+	// font-size: $p_font_size;
 	color: #f8f8f2;
 	background: $pre_bg_color;
 	padding: 0.15em 0.4em;
@@ -126,6 +133,8 @@ dd {
 }
 
 pre {
+	// font-size: $p_font_size;
+
 	code {
 		display: block;
 		margin: ($p_font_size * 1) 0;
