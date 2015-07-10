@@ -19,6 +19,7 @@ $h3_font_size: $p_font_size * 2;
 $h4_font_size: $p_font_size * 1.6;
 $h5_font_size: $p_font_size * 1.2;
 $h6_font_size: $p_font_size * 1;
+$code_font_size: $p_font_size;
 
 $header_logo_font_size: 64px;
 
@@ -30,4 +31,4 @@ $w_lg: 960px;
 
 $muli: 'Muli', sans-serif;
 $quicksand: 'Quicksand', sans-serif;
-$code: 'Monaco', 'Menlo', 'Inconsolata', monospace;
+$code: 'Inconsolata', monospace;
