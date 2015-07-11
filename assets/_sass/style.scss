@@ -9,8 +9,8 @@
 @import "monokai";
 @import "monokai-custom";
 
-* {
-	@include box-sizing(border-box);
+html {
+	box-sizing: border-box;
 }
 
 body {
