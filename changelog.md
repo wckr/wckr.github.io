@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /changelog/
 title: Wocker Changelog
 type: changelog
 ---

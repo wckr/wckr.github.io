@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /commands/
 title: Wocker Commands
 type: commands
 ---
