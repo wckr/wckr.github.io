@@ -22,4 +22,4 @@ core@wocker $ wocker run --name test
 core@wocker $ wocker wp core download --version=3.5 --force
 ```
 
-This will force download WordPress 3.5 to the running container. You will have a WordPress 3.5 environment if you visit [http://wocker.dev](http://wocker.dev).
+This will force download WordPress 3.5 to the running container. You will have a WordPress 3.5 environment if you visit [http://wocker.dev](http://wocker.dev). You can change `3.5` to any version you want.
