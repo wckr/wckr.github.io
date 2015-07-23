@@ -5,9 +5,17 @@ title: Wocker Changelog
 type: changelog
 ---
 
+## 0.7.0
+
+- Update php.ini.
+  - Increase `upload_max_filesize` to 32M.
+  - Increase `post_max_size` to 64M.
+  - Enable `display_errors`.
+  - Set `mbstring.internal_encoding` at UTF-8.
+
 ## 0.6.0
 
-- Add a command: `wocker theme-test`
+- Add a command: `wocker theme-test`.
 
 ## 0.5.0
 
