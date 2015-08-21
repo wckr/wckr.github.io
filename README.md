@@ -6,7 +6,6 @@
 
 ## Requires
 
-- Ruby
 - Jekyll
 - Compass
 
@@ -30,4 +29,4 @@ $ compass w
 
 ### Visit the local site
 
-The default URL will be http://localhost:4000
+The default URL will be `http://localhost:4000`
