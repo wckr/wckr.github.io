@@ -5,6 +5,9 @@ title: Wocker Changelog
 type: changelog
 ---
 
+## 0.8.1
+- WordPress 4.3.1
+
 ## 0.8.0
 
 - WordPress 4.3
