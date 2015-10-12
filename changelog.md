@@ -6,7 +6,7 @@ type: changelog
 ---
 
 ## 0.9.0
-- Enable `wocker wp shell` command
+- Support `wocker wp shell` command
 
 ## 0.8.1
 - WordPress 4.3.1
