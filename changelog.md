@@ -5,6 +5,9 @@ title: Wocker Changelog
 type: changelog
 ---
 
+## 0.9.1
+- Use WP-CLI nightly
+
 ## 0.9.0
 - Support `wocker wp shell` command
 
