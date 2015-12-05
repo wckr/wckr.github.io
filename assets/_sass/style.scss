@@ -228,6 +228,10 @@ dl.dl_inline {
 	color: #fff;
 	min-width: 960px;
 
+	@include media(max-width $w_lg) {
+		min-width: 0;
+	}
+
 	.site-title {
 		color: #fff;
 		font-size: $header_logo_font_size;
@@ -295,12 +299,23 @@ dl.dl_inline {
 	float: left;
 	width: 75%;
 	padding: 0 10px;
+
+	@include media(max-width $w_lg) {
+		float: none;
+		width: 100%;
+	}
 }
 
 .site-header-aside {
 	float: right;
 	width: 25%;
 	padding: 0 10px;
+
+	@include media(max-width $w_lg) {
+		// float: none;
+		// width: 100%;
+		display: none;
+	}
 
 	a {
 		font-family: $quicksand;
@@ -341,6 +356,10 @@ dl.dl_inline {
 	text-align: center;
 	min-width: 960px;
 
+	@include media(max-width $w_lg) {
+		min-width: 0;
+	}
+
 	p {
 		margin: 0;
 	}
@@ -354,8 +373,8 @@ dl.dl_inline {
 	@include media(max-width $w_lg) {
 		float: none;
 		width: auto;
-		padding-left: $gutter;
-		padding-right: $gutter;
+		padding-left: $gutter / 2;
+		padding-right: $gutter / 2;
 	};
 }
 
@@ -368,6 +387,7 @@ dl.dl_inline {
 	@include media(max-width $w_lg) {
 		float: none;
 		width: auto;
+		display: none;
 	};
 }
 
@@ -426,6 +446,10 @@ dl.dl_inline {
 	background: #fff;
 	border-bottom: 1px solid $border_color;
 	text-align: center;
+
+	@include media(max-width $w_lg) {
+		height: auto;
+	}
 
 	iframe {
 		vertical-align: bottom;
