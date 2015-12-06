@@ -5,6 +5,9 @@ title: Wocker Changelog
 type: changelog
 ---
 
+## 0.9.2
+- Fix a bug of `wocker run` with Docker 1.8 or later
+
 ## 0.9.1
 - Use WP-CLI nightly
 
