@@ -40,44 +40,6 @@ This could take a while on the first run as your local machine downloads the req
 
 [http://wocker.dev/](http://wocker.dev/)
 
->### Windows
-
->`vagrant-winnfsd` plugin is required to support NFS on Windows.
-
->```bash
-$ vagrant plugin install vagrant-winnfsd
-```
-
->You will also need to declare some sort of network in order for NFS to work.
-A private dhcp network is required for NFS to work (on Windows hosts, at least).
-Please change the line 49 in the Vagrantfile to:
-
->```ruby
-config.vm.network :private_network, ip: "172.17.8.23", type: "dhcp"
-```
-
->More resources:  
-[GM-Alex/vagrant-winnfsd](https://github.com/GM-Alex/vagrant-winnfsd)
-
->### Ubuntu
-
->If you got this message on Ubuntu:
-
->```
-It appears your machine doesn't support NFS, or there is not an adapter  
-to enable NFS on this machine for Vagrant.
-```
-
->You'll need to:
-
->```bash
-$ apt-get install nfs-kernel-server
-```
-
->More resources:  
-[Ubuntu needs nfs-kernel-server installed #4](https://github.com/{{ site.github_org }}/{{ site.github_repo }}/issues/4)  
-[missing NFS support error on Ubuntu hosts could be improved perhaps #1534](https://github.com/mitchellh/vagrant/issues/1534)
-
 ## Credentials and Such
 
 ### WordPress
