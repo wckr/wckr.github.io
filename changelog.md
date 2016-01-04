@@ -5,6 +5,13 @@ title: Wocker Changelog
 type: changelog
 ---
 
+## 1.0.0
+- Change the box from CoreOS to [DockerRoot](https://github.com/ailispaw/docker-root)
+- Update the OS in Wocker image from Debian Wheezy to Jessie
+- Change wocker-bashrc to wocker-cli
+- WordPress 4.4
+- Fix some bugs when installing themes/plugins and upgrading/downgrading WordPress core via WP-CLI
+
 ## 0.9.2
 - Fix a bug of `wocker run` with Docker 1.8 or later
 
