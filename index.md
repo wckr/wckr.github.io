@@ -3,6 +3,10 @@ layout: default
 type: get-started
 ---
 
+## What is Wocker?
+
+Wocker is a local WordPress development environment. Since it's based on Docker, it takes just 3 seconds to create every new installation of WordPress.
+
 ## Get Started
 
 ### 1. Install Vagrant
