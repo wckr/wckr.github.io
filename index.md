@@ -89,42 +89,44 @@ $ vagrant ssh
 
 ### 2. Stop or remove the running Wocker container
 
-```bash
-core@wocker ~ $ wocker stop CONTAINER
-```
+<div class="highlight">
+  <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker stop [CONTAINER]</code></pre>
+</div>
 
-or
+OR
 
-```bash
-core@wocker ~ $ wocker rm -f CONTAINER
-```
+<div class="highlight">
+  <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker rm -f CONTAINER</code></pre>
+</div>
 
 `CONTAINER` can be a name or ID of a container. You can use `wocker ps` (Docker alias) to list only running containers.
 
+If `CONTAINER` is omitted in `wocker stop`, all running containers will be stopped.
+
 __Note:__ the `wocker rm -f` command forcely remove containers and synced folders in your local `data` directory. Please back up the files before removing containers if you need them.
 
-####Example
+#### Example
 
-```bash
-core@wocker ~ $ wocker stop wocker
-```
+<div class="highlight">
+  <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker stop wocker</code></pre>
+</div>
 
 The first default container `wocker` will be running after your first `vagrant up`.
 
 
 ### 3. Use a Wocker command to run a new container
 
-```bash
-core@wocker ~ $ wocker run
-```
+<div class="highlight">
+  <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker run</code></pre>
+</div>
 
 You can use the name flag to assign a specific name to the container.
 
 #### Example
 
-```bash
-core@wocker ~ $ wocker run --name test
-```
+<div class="highlight">
+  <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker run --name test</code></pre>
+</div>
 
 ## Restart a Stopped Wocker Container (1 SECONDS)
 
@@ -138,39 +140,41 @@ $ vagrant ssh
 
 ### 2. Stop or remove the running Wocker container
 
-```bash
-core@wocker ~ $ wocker stop CONTAINER
-```
+<div class="highlight">
+  <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker stop [CONTAINER]</code></pre>
+</div>
 
 or
 
-```bash
-core@wocker ~ $ wocker rm -f CONTAINER
-```
+<div class="highlight">
+  <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker rm -f CONTAINER</code></pre>
+</div>
 
 `CONTAINER` can be a name or ID of a container.
+
+If `CONTAINER` is omitted in `wocker stop`, all running containers will be stopped.
 
 __Note:__ the `wocker rm -f` command forcely remove containers and synced folders in your local `data` directory. Please back up the files before removing containers if you need them.
 
 #### Example
 
-```bash
-core@wocker ~ $ wocker stop test
-```
+<div class="highlight">
+  <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker stop test</code></pre>
+</div>
 
 ### 3. Restart a stopped Wocker container
 
-```bash
-core@wocker ~ $ wocker start CONTAINER
-```
+<div class="highlight">
+  <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker start CONTAINER</code></pre>
+</div>
 
 `CONTAINER` can be a name or ID of a container. You can use `wocker ps -a` (Docker alias) to list all containers including stopped ones.
 
 #### Example
 
-```bash
-core@wocker ~ $ wocker start wocker
-```
+<div class="highlight">
+  <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker start wocker</code></pre>
+</div>
 
 ## Shutdown Wocker
 
@@ -196,20 +200,20 @@ $ vagrant ssh
 
 ### 3. Restart a stopped container or run a new container
 
-```bash
-core@wocker ~ $ wocker start CONTAINER
-```
+<div class="highlight">
+  <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker start CONTAINER</code></pre>
+</div>
 
 or
 
-```bash
-core@wocker ~ $ wocker run
-```
+<div class="highlight">
+  <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker run</code></pre>
+</div>
 
 `CONTAINER` can be a name or ID of a container.
 
 #### Example
 
-```bash
-core@wocker ~ $ wocker start wocker
-```
+<div class="highlight">
+  <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker start wocker</code></pre>
+</div>
