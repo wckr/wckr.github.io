@@ -12,6 +12,7 @@ To list available commands, either run `wocker` with no parameters or execute `w
 
 ```
 $ wocker
+
 Usage: wocker COMMAND [arg...]
 
 Commands:
@@ -22,6 +23,7 @@ To list the help on any command just execute the command, followed by the `--hel
 
 ```
 $ wocker run --help
+
 Usage: wocker run [--name=""] [IMAGE[:TAG]]
 
 Run a new container
@@ -171,14 +173,17 @@ This will start the container `test`.
 
 ----
 
-### stop (Docker alias)
+### stop
 
 ```
-Usage: wocker stop [OPTIONS] CONTAINER
+Usage: wocker stop [OPTIONS] [CONTAINER...]
 
-Stop a running container by sending SIGTERM and then SIGKILL after a grace period
+Stop a running container.
+Sending SIGTERM and then SIGKILL after a grace period
 
-  -t, --time=10      Seconds to wait for stop before killing it
+  --help=false    Print usage
+  -t, --time=10   Seconds to wait for stop before killing it
+  CONTAINER       If omitted, all running containers will be stopped.
 ```
 
 The main process inside the container will receive `SIGTERM`, and after a grace period, `SIGKILL`.
@@ -190,6 +195,12 @@ $ wocker stop test
 ```
 
 This will stop the container `test`.
+
+```bash
+$ wocker stop
+```
+
+This will stop all running containers.
 
 ----
 
@@ -276,8 +287,11 @@ Usage: wocker exec [OPTIONS] CONTAINER COMMAND [ARG...]
 Run a command in a running container
 
   -d, --detach=false         Detached mode: run command in the background
+  --help=false               Print usage
   -i, --interactive=false    Keep STDIN open even if not attached
+  --privileged=false         Give extended privileges to the command
   -t, --tty=false            Allocate a pseudo-TTY
+  -u, --user=                Username or UID (format: <name|uid>[:<group|gid>])
 ```
 
 The `wocker exec` command runs a new command in a running container. If the container is paused, then the `wocker exec` command will fail with an error.
@@ -290,18 +304,24 @@ $ wocker exec -it test bash
 
 This will create a new Bash session in the running container `test`. Then you can run WP-CLI or MySQL commands etc. in the container.
 
+__Note:__ the `--allow-root` flag is required for WP-CLI commands as the `root` user.
+
 ```bash
-root@****:/var/www/wordpress# wp --allow-root --info
-PHP binary: /usr/bin/php5
-PHP version:  5.4.39-0+deb7u2
-php.ini used: /etc/php5/cli/php.ini
-WP-CLI root dir:  phar://wp-cli.phar
-WP-CLI global config:
-WP-CLI project config:
-WP-CLI version: 0.18.0
+$ wocker exec -it --user wocker test bash
 ```
 
-__Note:__ the `--allow-root` flag is required for WP-CLI commands in Wocker containers.
+This will create a new Bash session in the running container `test` as the user `wocker`. The `--allow-root` flag of WP-CLI is not necessary.
+
+```bash
+wocker@****:/var/www/wordpress$ wp --info
+PHP binary: /usr/bin/php5
+PHP version:  5.6.14-0+deb8u1
+php.ini used: /etc/php5/cli/php.ini
+WP-CLI root dir:  phar://wp-cli.phar
+WP-CLI global config: 
+WP-CLI project config:  
+WP-CLI version: 0.22.0-alpha-0c9480e
+```
 
 More resources about WP-CLI, please see: [http://wp-cli.org/](http://wp-cli.org/)
 
