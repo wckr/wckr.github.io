@@ -553,7 +553,7 @@ dl.dl_inline {
 }
 
 .site-issues {
-	padding-left: 20px;
+	// padding-left: 20px;
 
 	li {
 		margin-bottom: 1em;
@@ -562,5 +562,44 @@ dl.dl_inline {
 
 	.site-issues-title {
 		font-size: $p_font_size * 1.2;
+	}
+}
+
+.wocker-contributors {
+	padding-bottom: 2em;
+
+	.wocker-contributors-title {
+		font-size: $p_font_size * 1.2;
+		margin-bottom: 8px;
+	}
+
+	> ul {
+		@include outer-container;
+		padding: 5px;
+
+		> li {
+			padding: 0;
+			margin: 5px;
+			text-indent: 0;
+			width: 60px;
+			height: 60px;
+			overflow: hidden;
+			float: left;
+			border: 1px solid $border_color;
+			@include border-radius(50px);
+
+			> a {
+				display: block;
+			}
+
+			img {
+				max-width: 100%;
+			}
+
+			&:before {
+				content: '';
+				margin: 0;
+			}
+		}
 	}
 }

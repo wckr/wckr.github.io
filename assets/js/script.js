@@ -1,3 +1,26 @@
+;(function($, undefined){
+
+  "use strict";
+
+  $.fn.getContributorAvator = function() {
+    return this.each(function() {
+      var $el = $(this);
+      var login = $el.data('login');
+      if (login) {
+        $.ajax({
+          url: 'https://api.github.com/users/' + login,
+          type: 'GET',
+          dataType: 'json',
+        })
+        .done(function(data) {
+          $el.append('<a href="' + data.html_url + '" target="_blank"><img src="' + data.avatar_url + '" /></a>');
+        });
+      }
+    });
+  };
+
+})(jQuery);
+
 $(function() {
 
   // $('pre code').each(function(i, block) {
@@ -55,6 +78,8 @@ $(function() {
   $affix.css({
     width: affixW + 'px'
   });
+
+  $('.js-wocker-contributors > ul > li').getContributorAvator();
 
   function chasingNav(h, top, navsAbove) {
     var $h = $main.find(h);

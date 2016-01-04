@@ -149,8 +149,8 @@ img {
 
 @font-face {
   font-family: 'wockericon';
-  src: url("../fonts/wockericon.eot?ni2nxu");
-  src: url("../fonts/wockericon.eot?#iefixni2nxu") format("embedded-opentype"), url("../fonts/wockericon.woff?ni2nxu") format("woff"), url("../fonts/wockericon.ttf?ni2nxu") format("truetype"), url("../fonts/wockericon.svg?ni2nxu#wockericon") format("svg");
+  src: url("../fonts/wockericon.eot?dpk6f7");
+  src: url("../fonts/wockericon.eot?#iefixdpk6f7") format("embedded-opentype"), url("../fonts/wockericon.woff?dpk6f7") format("woff"), url("../fonts/wockericon.ttf?dpk6f7") format("truetype"), url("../fonts/wockericon.svg?dpk6f7#wockericon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -199,6 +199,11 @@ a[class^="icon-"]:hover:before, a[class*=" icon-"]:hover:before {
 /* line 58, ../_sass/_icon.scss */
 .icon-issues:before {
   content: "\e604";
+}
+
+/* line 62, ../_sass/_icon.scss */
+.icon-contributor:before {
+  content: "\e900";
 }
 
 /* line 3, ../_sass/_js.scss */
@@ -1204,10 +1209,6 @@ dl.dl_50 dt {
   font-size: 19.2px;
 }
 
-/* line 555, ../_sass/style.scss */
-.site-issues {
-  padding-left: 20px;
-}
 /* line 558, ../_sass/style.scss */
 .site-issues li {
   margin-bottom: 1em;
@@ -1216,4 +1217,54 @@ dl.dl_50 dt {
 /* line 563, ../_sass/style.scss */
 .site-issues .site-issues-title {
   font-size: 19.2px;
+}
+
+/* line 568, ../_sass/style.scss */
+.wocker-contributors {
+  padding-bottom: 2em;
+}
+/* line 571, ../_sass/style.scss */
+.wocker-contributors .wocker-contributors-title {
+  font-size: 19.2px;
+  margin-bottom: 8px;
+}
+/* line 576, ../_sass/style.scss */
+.wocker-contributors > ul {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+/* line 20, ../_sass/bourbon/addons/_clearfix.scss */
+.wocker-contributors > ul::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 580, ../_sass/style.scss */
+.wocker-contributors > ul > li {
+  padding: 0;
+  margin: 5px;
+  text-indent: 0;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  float: left;
+  border: 1px solid #eee;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+/* line 591, ../_sass/style.scss */
+.wocker-contributors > ul > li > a {
+  display: block;
+}
+/* line 595, ../_sass/style.scss */
+.wocker-contributors > ul > li img {
+  max-width: 100%;
+}
+/* line 599, ../_sass/style.scss */
+.wocker-contributors > ul > li:before {
+  content: '';
+  margin: 0;
 }
