@@ -222,6 +222,18 @@ dl.dl_inline {
 	};
 }
 
+.above-site-header-notice {
+	text-align: center;
+	background: $magenta;
+	color: #fff;
+	font-weight: 400;
+	padding: 0.5em 1em;
+
+	p {
+		margin: 0;
+	}
+}
+
 .site-header {
 	background: $brand_color url(../images/header-bg.jpg) no-repeat center center;
 	background-size: cover;
