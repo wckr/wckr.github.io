@@ -6,6 +6,7 @@ type: changelog
 ---
 
 ## 1.0.1
+- Enable `.htaccess`
 - Fix [ailispaw/docker-root#2](https://github.com/ailispaw/docker-root/issues/2)
 
 ## 1.0.0
