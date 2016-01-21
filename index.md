@@ -23,8 +23,6 @@ Wocker is a local WordPress development environment. Since it's based on Docker,
 $ vagrant plugin install vagrant-hostsupdater
 ```
 
-Windows is not allowed to change hosts-file. Please add "wocker.dev 172.17.8.23" by yourself!
-
 ### 4. Clone the Wocker Repository
 
 ```bash
