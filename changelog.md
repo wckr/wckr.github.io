@@ -5,6 +5,9 @@ title: Wocker Changelog
 type: changelog
 ---
 
+## 1.0.2
+- Fix `mysqld_safe` bug cf. [https://github.com/wckr/wocker/pull/28#issuecomment-195945765](https://github.com/wckr/wocker/pull/28#issuecomment-195945765)
+
 ## 1.0.1
 - Enable `.htaccess`
 - Fix [ailispaw/docker-root#2](https://github.com/ailispaw/docker-root/issues/2)
