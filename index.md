@@ -92,7 +92,7 @@ $ vagrant ssh
 ### 2. Stop or remove the running Wocker container
 
 <div class="highlight">
-  <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker stop [CONTAINER]</code></pre>
+  <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker stop CONTAINER</code></pre>
 </div>
 
 OR
@@ -143,7 +143,7 @@ $ vagrant ssh
 ### 2. Stop or remove the running Wocker container
 
 <div class="highlight">
-  <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker stop [CONTAINER]</code></pre>
+  <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker stop CONTAINER</code></pre>
 </div>
 
 or
