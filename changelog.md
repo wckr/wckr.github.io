@@ -5,6 +5,9 @@ title: Wocker Changelog
 type: changelog
 ---
 
+## 1.0.3
+- Add `ServerName` to avoid Apache2 warning
+
 ## 1.0.2
 - Fix `mysqld_safe` bug cf. [https://github.com/wckr/wocker/pull/28#issuecomment-195945765](https://github.com/wckr/wocker/pull/28#issuecomment-195945765)
 
