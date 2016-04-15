@@ -178,7 +178,7 @@ This will start the container `test`.
 ```
 Usage: wocker stop [OPTIONS] [CONTAINER...]
 
-Stop a running container.
+Stop the running container.
 Sending SIGTERM and then SIGKILL after a grace period
 
   --help=false    Print usage
@@ -201,6 +201,26 @@ $ wocker stop
 ```
 
 This will stop all running containers.
+
+----
+
+### switch
+
+```
+Usage: wocker switch CONTAINER
+
+Stop the running container then start a stopped container
+
+  --help=false    Print usage
+```
+
+#### Examples
+
+```bash
+$ wocker switch test
+```
+
+This will stop the running container at first if it exists and then start the container `test`.
 
 ----
 
