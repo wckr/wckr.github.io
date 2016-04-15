@@ -5,6 +5,9 @@ title: Wocker Changelog
 type: changelog
 ---
 
+## 1.1
+- Add `wocker switch` command
+
 ## 1.0.3
 - Add `ServerName` to avoid Apache2 warning
 
