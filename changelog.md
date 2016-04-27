@@ -5,6 +5,9 @@ title: Wocker Changelog
 type: changelog
 ---
 
+## 1.1.1
+- Allow WP-CLI to regenerate a .htaccess file
+
 ## 1.1
 - Add `wocker switch` command
 
