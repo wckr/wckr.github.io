@@ -4,6 +4,16 @@ description: Docker-based rapid development environment of WordPress. IT TAKES J
 baseurl: ""
 url: https://wckr.github.io
 
+exclude:
+  - node_modules
+  - gulpfile.js
+  - gulpconfig.json
+  - package.json
+  - npm-debug.log
+  - README.md
+  - LICENSE
+  - config.rb
+
 github_user: ixkaito
 github_org: wckr
 github_repo: wocker
