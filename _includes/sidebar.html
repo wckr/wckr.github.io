@@ -12,13 +12,9 @@
 	<div class="wocker-contributors js-wocker-contributors">
 		<p class="wocker-contributors-title icon-contributor">Contributors</p>
 		<ul>
-			<li data-login="ixkaito"></li>
-			<li data-login="supersoju"></li>
-			<li data-login="laczoka"></li>
-			<li data-login="danielbachhuber"></li>
-			<li data-login="ailispaw"></li>
-			<li data-login="AtsushiA"></li>
-			<li data-login="akiya64"></li>
+		{% for contributor in site.data.contributors %}
+			<li data-login="{{ contributor.id }}"></li>
+		{% endfor %}
 		</ul>
 	</div>
 </div>
