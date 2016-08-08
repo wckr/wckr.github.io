@@ -14,11 +14,14 @@ exclude:
   - LICENSE
   - config.rb
 
-github_user: ixkaito
-github_org: wckr
-github_repo: wocker
-facebook_user: kite.koga
-twitter_user: ixkaito
+github:
+  org: wckr
+  repo: wocker
+  admin: ixkaito
+facebook:
+  id: kite.koga
+twitter:
+  id: ixkaito
 
 images_dir: /assets/images
 css_dir: /assets/css

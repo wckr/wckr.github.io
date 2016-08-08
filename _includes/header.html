@@ -53,7 +53,7 @@
 	<div class="site-header-top">
 		<div class="inner">
 			<h1 class="site-logo"><a class="icon-wocker" href="{{ site.baseurl }}/">Wocker</a></h1>
-			{% if url != home_url %}<a class="site-header-top-github-link icon-github" href="https://github.com/{{ site.github_org }}/{{ site.github_repo }}">GitHub Project</a>{% endif %}
+			{% if url != home_url %}<a class="site-header-top-github-link icon-github" href="https://github.com/{{ site.github.org }}/{{ site.github.repo }}">GitHub Project</a>{% endif %}
 			<nav class="site-nav">
 				<ul>
 					<li class="{% if page.type == 'get-started' %}active{% endif %}"><a href="{{ site.baseurl }}/">Get Started</a></li>
@@ -78,7 +78,7 @@
 			</div>
 			{% if url == home_url %}
 			<div class="site-header-aside">
-				<a href="https://github.com/{{ site.github_org }}/{{ site.github_repo }}">
+				<a href="https://github.com/{{ site.github.org }}/{{ site.github.repo }}">
 					<small>View project on</small><br />
 					<i class="icon-github">GitHub</i>
 				</a>
@@ -91,12 +91,12 @@
 <div class="site-content js-site-content">
 	<div class="site-content-top">
 		<div class="inner">
-			<iframe src="https://ghbtns.com/github-btn.html?user={{ site.github_org }}&repo={{ site.github_repo }}&type=star&count=true" frameborder="0" scrolling="0" width="100" height="20" allowTransparency="true" title="Star on GitHub"></iframe>
-			<iframe src="https://ghbtns.com/github-btn.html?user={{ site.github_org }}&repo={{ site.github_repo }}&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" allowTransparency="true" title="Fork on GitHub"></iframe>
-			<iframe src="https://ghbtns.com/github-btn.html?user={{ site.github_user }}&type=follow" frameborder="0" scrolling="0" width="140" height="20" allowTransparency="true" title="Follow @ixkaito"></iframe>
+			<iframe src="https://ghbtns.com/github-btn.html?user={{ site.github.org }}&repo={{ site.github.repo }}&type=star&count=true" frameborder="0" scrolling="0" width="100" height="20" allowTransparency="true" title="Star on GitHub"></iframe>
+			<iframe src="https://ghbtns.com/github-btn.html?user={{ site.github.org }}&repo={{ site.github.repo }}&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20" allowTransparency="true" title="Fork on GitHub"></iframe>
+			<iframe src="https://ghbtns.com/github-btn.html?user={{ site.github.admin }}&type=follow" frameborder="0" scrolling="0" width="140" height="20" allowTransparency="true" title="Follow @{{ site.github.admin }}"></iframe>
 			<div class="fb-like" data-href="{{ site.url }}{{ site.baseurl }}/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
 			<a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ site.baseurl }}">Tweet</a>
-			<a href="https://twitter.com/ixkaito" class="twitter-follow-button" data-show-count="false">Follow @ixkaito</a>
+			<a href="https://twitter.com/{{ site.twitter.id }}" class="twitter-follow-button" data-show-count="false">Follow @{{ site.twitter.id }}</a>
 			<a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en" data-save-url="{{ site.url }}{{ site.baseurl }}"></a>
 		</div>
 	</div><!-- /.site-content-top -->
