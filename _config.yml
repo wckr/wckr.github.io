@@ -1,9 +1,8 @@
-# Site settings
 title: Wocker
 description: Docker-based rapid development environment of WordPress. IT TAKES JUST 3 SECONDS TO CREATE A NEW ONE!
 
 baseurl: ""
-url: http://wckr.github.io
+url: https://wckr.github.io
 
 github_user: ixkaito
 github_org: wckr
@@ -16,8 +15,5 @@ css_dir: /assets/css
 js_dir: /assets/js
 
 ogp_image: /ogp-image.png
-
-# Build settings
-# markdown: redcarpet
 
 version: 1.1.2
