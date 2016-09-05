@@ -5,6 +5,10 @@ title: Wocker Changelog
 type: changelog
 ---
 
+## 1.1.3
+- WordPress 4.6
+- WP-CLI 0.25.0-alpha-bcecf5f
+
 ## 1.1.2
 - Fix some bugs of Wocker CLI
 
