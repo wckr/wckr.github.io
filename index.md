@@ -180,7 +180,13 @@ __Note:__ the `wocker rm -f` command forcely remove containers and synced folder
 
 ## Shutdown Wocker
 
-### 1. Shutdown the guest machine
+### 1. Exit SSH of the guest machine
+
+<div class="highlight">
+  <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>exit</code></pre>
+</div>
+
+### 2. Shutdown the guest machine
 
 ```bash
 $ vagrant halt
