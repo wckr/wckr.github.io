@@ -19,7 +19,7 @@ Commands:
 ...
 ```
 
-To list the help on any command just execute the command, followed by the `--help` option.
+To list the help on any commands just execute the command, followed by the `--help` option.
 
 ```
 $ wocker run --help
