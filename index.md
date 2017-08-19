@@ -37,7 +37,7 @@ $ vagrant up
 
 This could take a while on the first run as your local machine downloads the required files. Watch as the script ends, as an administrator or su password may be required. The first default container `wocker` will be running after the provision finishes successfully.
 
-On Windows, run Cmd, PowerShell or other terminals as an administrator.
+**Note:** on Windows, run Cmd, PowerShell or other terminals as an administrator.
 
 ### 6. Visit following site in your browser
 
@@ -106,7 +106,7 @@ OR
 
 If `CONTAINER` is omitted in `wocker stop`, all running containers will be stopped.
 
-__Note:__ the `wocker rm -f` command forcely remove containers and synced folders in your local `data` directory. Please back up the files before removing containers if you need them.
+**Note:** the `wocker rm -f` command forcely remove containers and synced folders in your local `data` directory. Please back up the files before removing containers if you need them.
 
 #### Example
 
@@ -157,7 +157,7 @@ or
 
 If `CONTAINER` is omitted in `wocker stop`, all running containers will be stopped.
 
-__Note:__ the `wocker rm -f` command forcely remove containers and synced folders in your local `data` directory. Please back up the files before removing containers if you need them.
+**Note:** the `wocker rm -f` command forcely remove containers and synced folders in your local `data` directory. Please back up the files before removing containers if you need them.
 
 #### Example
 
