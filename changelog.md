@@ -6,7 +6,7 @@ type: changelog
 ---
 
 ## 1.2
-- Change the domain from `wocker.dev` to `wocker.test`
+- Change the hostname from `wocker.dev` to `wocker.test`
 - Upgrade PHP 5.6 to PHP 7
 - Upgrade MySQL to MariaDB
 - Add Xdebug

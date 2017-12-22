@@ -39,7 +39,7 @@ This could take a while on the first run as your local machine downloads the req
 
 **Note:** on Windows, run Cmd, PowerShell or other terminals as an administrator.
 
-### 6. Visit following site in your browser
+### 6. Visit the following site in your browser
 
 [http://wocker.test/](http://wocker.test/)
 
