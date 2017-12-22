@@ -41,7 +41,7 @@ This could take a while on the first run as your local machine downloads the req
 
 ### 6. Visit following site in your browser
 
-[http://wocker.dev/](http://wocker.dev/)
+[http://wocker.test/](http://wocker.test/)
 
 ## Credentials and Such
 
