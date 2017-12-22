@@ -36,7 +36,7 @@ $ vagrant ssh
   <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker wp search-replace wocker.dev wocker.test</code></pre>
 </div>
 
-### 5. Visit following site in your browser
+### 5. Visit the following site in your browser
 
 [http://wocker.test/](http://wocker.test/)
 
