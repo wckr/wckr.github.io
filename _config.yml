@@ -9,6 +9,7 @@ exclude:
   - gulpfile.js
   - gulpconfig.json
   - package.json
+  - package-lock.json
   - npm-debug.log
   - README.md
   - LICENSE
