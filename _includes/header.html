@@ -1,5 +1,5 @@
-{% assign url = page.url | remove: 'index.html' %}
-{% capture home_url %}{{ site.baseurl }}/{% endcapture %}
+{%- assign url = page.url | remove: 'index.html' -%}
+{%- capture home_url %}{{ site.baseurl }}/{% endcapture -%}
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +7,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}: {{ site.description }}{% endif %}</title>
+	<title>{%- if url == home_url || ! page.title -%}
+		{{ site.title }}: {{ site.description }}
+	{%- else -%}
+		{{ page.title }} | {{ site.title }}
+	{%- endif -%}</title>
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
 	<meta property="og:type" content="article" />
@@ -53,7 +57,9 @@
 	<div class="site-header-top">
 		<div class="inner">
 			<h1 class="site-logo"><a class="icon-wocker" href="{{ site.baseurl }}/">Wocker</a></h1>
-			{% if url != home_url %}<a class="site-header-top-github-link icon-github" href="https://github.com/{{ site.github.org }}/{{ site.github.repo }}">GitHub Project</a>{% endif %}
+			{% if url != home_url -%}
+				<a class="site-header-top-github-link icon-github" href="https://github.com/{{ site.github.org }}/{{ site.github.repo }}">GitHub Project</a>
+			{%- endif %}
 			<nav class="site-nav">
 				<ul>
 					<li class="{% if page.type == 'get-started' %}active{% endif %}"><a href="{{ site.baseurl }}/">Get Started</a></li>
@@ -67,23 +73,23 @@
 	<div class="site-header-middle">
 		<div class="inner">
 			<div class="site-header-main">
-				{% if url == home_url %}
-				<h1 class="site-title"><a href="{{ site.baseurl }}/">Wocker</a></h1>
-				<p class="site-description">Docker-based rapid development environment of WordPress.<br />
-					<strong>IT TAKES JUST 3 SECONDS TO CREATE A NEW ONE!</strong><br />
-					Version {{ site.version }}</p>
-				{% else %}
-				<h1 class="page-title"><a href="{{ url }}">{{ page.title }}</a></h1>
-				{% endif %}
+				{% if url == home_url -%}
+					<h1 class="site-title"><a href="{{ site.baseurl }}/">Wocker</a></h1>
+					<p class="site-description">Docker-based rapid WordPress development environment.<br>
+						<strong>It takes just 3 seconds to create every fresh WordPress environment!</strong><br>
+						Version {{ site.version }}</p>
+				{%- else -%}
+					<h1 class="page-title"><a href="{{ url }}">{{ page.title }}</a></h1>
+				{%- endif %}
 			</div>
-			{% if url == home_url %}
-			<div class="site-header-aside">
-				<a href="https://github.com/{{ site.github.org }}/{{ site.github.repo }}">
-					<small>View project on</small><br />
-					<i class="icon-github">GitHub</i>
-				</a>
-			</div>
-			{% endif %}
+			{% if url == home_url -%}
+				<div class="site-header-aside">
+					<a href="https://github.com/{{ site.github.org }}/{{ site.github.repo }}">
+						<small>View project on</small><br />
+						<i class="icon-github">GitHub</i>
+					</a>
+				</div>
+			{%- endif %}
 		</div>
 	</div>
 </header>

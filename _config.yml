@@ -1,5 +1,5 @@
 title: Wocker
-description: Docker-based rapid development environment of WordPress. IT TAKES JUST 3 SECONDS TO CREATE A NEW ONE!
+description: Docker-based rapid WordPress development environment. IT TAKES JUST 3 SECONDS TO CREATE A NEW ONE!
 
 baseurl: ""
 url: https://wckr.github.io
@@ -29,4 +29,4 @@ js_dir: /assets/js
 
 ogp_image: /ogp-image.png
 
-version: 1.1.4
+version: 1.2
