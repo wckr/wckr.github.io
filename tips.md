@@ -5,7 +5,7 @@ title: Wocker Tips
 type: tips
 ---
 
-## How to fix a v1.1.x Wocker container for v1.2+
+## How to move an old container from wocker.dev to wocker.test
 
 ### 1. Check the hostname on your Vagrantfile
 
