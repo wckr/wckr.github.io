@@ -179,7 +179,7 @@ If `CONTAINER` is omitted in `wocker stop`, all running containers will be stopp
   <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker start wocker</code></pre>
 </div>
 
-## Shutdown Wocker
+## Shut down Wocker
 
 ### 1. Exit SSH of the guest machine
 
@@ -187,7 +187,7 @@ If `CONTAINER` is omitted in `wocker stop`, all running containers will be stopp
   <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>exit</code></pre>
 </div>
 
-### 2. Shutdown the guest machine
+### 2. Shut down the guest machine
 
 ```bash
 $ vagrant halt

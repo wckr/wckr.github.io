@@ -5,6 +5,14 @@ title: Wocker Changelog
 type: changelog
 ---
 
+## 1.2
+- Change the domain from `wocker.dev` to `wocker.test`
+- Upgrade PHP 5.6 to PHP 7
+- Upgrade MySQL to MariaDB
+- Add Xdebug
+- Add PHPUnit
+- WordPress 4.9.1
+
 ## 1.1.4
 - Fix a bug of `wocker wp cli update`
 
