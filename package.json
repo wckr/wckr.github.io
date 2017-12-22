@@ -1,0 +1,23 @@
+{
+  "name": "wckr.github.io",
+  "version": "1.0.0",
+  "description": "Wocker Documentation",
+  "main": "index.js",
+  "scripts": {
+    "start": "jekyll s -w -o & node-sass --output-style compressed -w -r assets/_sass --output assets/css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wckr/wckr.github.io.git"
+  },
+  "author": "Kite",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wckr/wckr.github.io/issues"
+  },
+  "homepage": "https://github.com/wckr/wckr.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

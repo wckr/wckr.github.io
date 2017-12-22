@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import "compass";
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "variables";
@@ -115,11 +114,11 @@ pre, code, kbd, samp, tt{
 }
 
 code {
+	border-radius: 4px;
 	font-family: $code;
 	color: #f8f8f2;
 	background: $pre_bg_color;
 	padding: 0.15em 0.4em;
-	@include border-radius(4px);
 }
 
 p,
@@ -331,6 +330,7 @@ dl.dl_inline {
 	}
 
 	a {
+		border-radius: 130px;
 		font-family: $quicksand;
 		font-size: $p_font_size * 0.9;
 		margin: auto;
@@ -345,7 +345,6 @@ dl.dl_inline {
 		top: 50%;
 		margin: -64px 0 0 -64px;
 		text-align: center;
-		@include border-radius(130px);
 
 		.icon-github {
 			font-size: $base_font_size * 1.8;
@@ -579,6 +578,7 @@ dl.dl_inline {
 		padding: 5px;
 
 		> li {
+			border-radius: 50px;
 			padding: 0;
 			margin: 5px;
 			text-indent: 0;
@@ -587,7 +587,6 @@ dl.dl_inline {
 			overflow: hidden;
 			float: left;
 			border: 1px solid $border_color;
-			@include border-radius(50px);
 
 			> a {
 				display: block;
