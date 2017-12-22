@@ -14,6 +14,9 @@ type: changelog
 - WordPress 4.9.1
 - Add `wocker commit` command
 
+## 1.1.5
+- Add `--nightly` option to `wocker update` command
+
 ## 1.1.4
 - Fix a bug of `wocker wp cli update`
 
