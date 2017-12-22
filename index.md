@@ -131,7 +131,7 @@ You can use the name flag to assign a specific name to the container.
   <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker run --name test</code></pre>
 </div>
 
-## Restart a Stopped Wocker Container (1 SECONDS)
+## Restart a Stopped Wocker Container (1 SECOND)
 
 Before a restart, you must stop or remove the running Wocker container.
 
