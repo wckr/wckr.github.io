@@ -12,6 +12,7 @@ type: changelog
 - Add Xdebug
 - Add PHPUnit
 - WordPress 4.9.1
+- Add `wocker commit` command
 
 ## 1.1.4
 - Fix a bug of `wocker wp cli update`
