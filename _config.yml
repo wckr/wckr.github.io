@@ -1,5 +1,5 @@
 title: Wocker
-description: Docker-based rapid WordPress development environment. IT TAKES JUST 3 SECONDS TO CREATE EVERY FRESH WORDPRESS ENVIRONMENT!
+description: Wocker is a local WordPress development environment. Since it’s based on Docker, it takes just 3 seconds to create every new installation of WordPress.
 
 baseurl: ""
 url: https://wckr.github.io
