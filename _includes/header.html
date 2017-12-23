@@ -15,7 +15,11 @@
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
 	<meta property="og:type" content="article" />
-	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+	<meta property="og:title" content="{%- if url == home_url || ! page.title -%}
+		{{ site.title }}: Create your WordPress development environment in 3 seconds!
+	{%- else -%}
+		{{ page.title }} | {{ site.title }}
+	{%- endif -%}" />
 	<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/" />
 	<meta property="og:site_name" content="{{ site.title }}" />
 	<meta property="og:image" content="{% if page.ogp_image %}{{ site.url }}{{ site.baseurl }}{{ site.images_dir }}{{ page.ogp_image }}{% else %}{{ site.url }}{{ site.baseurl }}{{ site.images_dir }}{{ site.ogp_image }}{% endif %}" />
