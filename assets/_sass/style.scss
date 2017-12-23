@@ -287,7 +287,7 @@ dl.dl_inline {
 
 	a {
 		color: rgba(#fff, 0.75);
-		display: block;
+		display: inline-block;
 		padding: 0 1em;
 		line-height: $base_font_size * 3.6;
 
@@ -299,6 +299,10 @@ dl.dl_inline {
 
 	.site-header-top-github-link {
 		float: right;
+
+		@include media(max-width $w_lg) {
+			display: none;
+		}
 	}
 }
 
@@ -315,6 +319,7 @@ dl.dl_inline {
 	@include media(max-width $w_lg) {
 		float: none;
 		width: 100%;
+		padding: 0 1em;
 	}
 }
 
@@ -364,7 +369,7 @@ dl.dl_inline {
 .site-footer {
 	border-top: 1px solid $border_color;
 	background: $footer_bg_color;
-	padding: 20px 0;
+	padding: 20px 1em;
 	text-align: center;
 	min-width: 960px;
 
@@ -385,8 +390,8 @@ dl.dl_inline {
 	@include media(max-width $w_lg) {
 		float: none;
 		width: auto;
-		padding-left: $gutter / 2;
-		padding-right: $gutter / 2;
+		padding-left: 1em;
+		padding-right: 1em;
 	};
 }
 
@@ -411,7 +416,7 @@ dl.dl_inline {
 	padding: 0;
 
 	a {
-		display: block;
+		display: inline-block;
 		color: #fff;
 		padding: 0 10px;
 		line-height: $base_font_size * 3.6;
@@ -428,6 +433,10 @@ dl.dl_inline {
 	ul {
 		overflow: hidden;
 		padding: 0 10px;
+
+		@include media(max-width $w_lg) {
+			overflow: visible;
+		};
 
 		> li {
 			float: left;
