@@ -5,6 +5,9 @@ title: Wocker Changelog
 type: changelog
 ---
 
+## 1.2.1
+- Add php7.0-xml, php7.0-mbstring, php7.0-bz
+
 ## 1.2
 - Change the hostname from `wocker.dev` to `wocker.test`
 - Upgrade PHP 5.6 to PHP 7
