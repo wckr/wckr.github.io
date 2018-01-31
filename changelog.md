@@ -5,6 +5,11 @@ title: Wocker Changelog
 type: changelog
 ---
 
+## 1.3
+- Add Wordmove
+- Add MailHog
+- Add Nginx as an option
+
 ## 1.2.1
 - Add php7.0-xml, php7.0-mbstring, php7.0-bz
 
