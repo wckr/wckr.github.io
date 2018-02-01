@@ -5,6 +5,34 @@ title: Wocker Tips
 type: tips
 ---
 
+## How to use Nginx
+
+<div class="highlight">
+  <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker run [--name=""] wocker/wocker:nginx</code></pre>
+</div>
+
+This creates and runs a new container over `wocker/wocker:nignx` image. This could take a while on the first run as your local machine downloads the required image.
+
+## How to use MailHog
+
+### 1. Create or start a container
+
+<div class="highlight">
+  <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker run</code></pre>
+</div>
+
+OR
+
+<div class="highlight">
+  <pre><code data-lang="bash" class="language-bash"><span class="k">wocker ~ $ </span>wocker start CONTAINER</code></pre>
+</div>
+
+### 2. Visit the following site in your browser
+
+[http://wocker.test:8025/](http://wocker.test:8025/)
+
+For more information about MailHog, please see [https://github.com/mailhog/MailHog](https://github.com/mailhog/MailHog).
+
 ## How to move an old container from wocker.dev to wocker.test
 
 ### 1. Check the hostname on your Vagrantfile

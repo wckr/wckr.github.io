@@ -279,6 +279,30 @@ This will export the database to a file `wordpress.sql`.
 
 ----
 
+### wordmove
+
+```bash
+Commands:
+  wordmove --version, -v   # Print the version
+  wordmove doctor          # Do some local configuration and environment checks
+  wordmove help [COMMAND]  # Describe available commands or one specific command
+  wordmove init            # Generates a brand new movefile.yml
+  wordmove pull            # Pulls WP data from remote host to the local machine
+  wordmove push            # Pushes WP data from local machine to remote host
+```
+
+For more information about Wordmove, please see [https://github.com/welaika/wordmove](https://github.com/welaika/wordmove).
+
+#### Examples
+
+```bash
+$ wocker wordmove init
+```
+
+This will generate a new `movefile.yml`.
+
+----
+
 ### theme-test
 
 ```
