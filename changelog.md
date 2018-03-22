@@ -5,6 +5,9 @@ title: Wocker Changelog
 type: changelog
 ---
 
+## 1.3.1
+- Add lftp to enable Wordmove via ftp
+
 ## 1.3
 - Add Wordmove
 - Add MailHog
