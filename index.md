@@ -75,7 +75,7 @@ This could take a while on the first run as your local machine downloads the req
   <dd><code>data</code></dd>
 
   <dt>Guest machine:</dt>
-  <dd><code>/home/core/data</code></dd>
+  <dd><code>/home/bargee/data</code></dd>
 </dl>
 
 Every container created through Wocker automatically has it’s volumes exposed on your local machine. Wocker exposes a container’s volume data under `data/<container's name>`.
