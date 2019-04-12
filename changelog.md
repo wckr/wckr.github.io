@@ -5,6 +5,9 @@ title: Wocker Changelog
 type: changelog
 ---
 
+## 1.3.2
+- Update WP CLI to 2.1.0
+
 ## 1.3.1
 - Add lftp to enable Wordmove via ftp
 
