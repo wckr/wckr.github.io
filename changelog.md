@@ -5,6 +5,10 @@ title: Wocker Changelog
 type: changelog
 ---
 
+## 1.4
+- WordPress 5.2
+- Add php7.0-zip
+
 ## 1.3.2
 - Update WP CLI to 2.1.0
 
