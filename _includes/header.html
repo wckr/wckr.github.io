@@ -62,7 +62,7 @@
 	<link rel="apple-touch-icon" href="{{ site.baseurl }}{{ site.images_dir }}/apple-touch-icon.png" />
 </head>
 
-<body id="site-top" class="{% if page.type != '' %}{{ page.type }} js-{{ page.type }}{% endif %}">
+<body id="page-top" class="{% if page.type != '' %}{{ page.type }} js-{{ page.type }}{% endif %}">
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -89,7 +89,7 @@
 		<div class="inner">
 			<h1 class="site-logo"><a class="icon-wocker" href="{{ site.baseurl }}/">Wocker</a></h1>
 			{% if url != home_url -%}
-				<a class="site-header-top-github-link icon-github" href="https://github.com/{{ site.github.org }}/{{ site.github.repo }}">GitHub Project</a>
+				<a class="site-header-top-github-link icon-github" href="https://github.com/{{ site.github.org }}">GitHub Project</a>
 			{%- endif %}
 			<nav class="site-nav">
 				<ul>
@@ -115,7 +115,7 @@
 			</div>
 			{% if url == home_url -%}
 				<div class="site-header-aside">
-					<a href="https://github.com/{{ site.github.org }}/{{ site.github.repo }}">
+					<a href="https://github.com/{{ site.github.org }}">
 						<small>View project on</small><br />
 						<i class="icon-github">GitHub</i>
 					</a>

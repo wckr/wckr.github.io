@@ -44,7 +44,9 @@ $(function() {
   var text, $navsItem, body, $h3;
 
   $h2.each(function(i) {
-    text = $(this).text();
+    var $this = $(this).clone();
+    $this.children('small').remove();
+    text = $this.text();
     $(this).attr('id', 'h2-' + i );
     $navs.append('<li id="nav-h2-' + i + '" class="nav-h2"><a href="#h2-' + i + '">' + text + '</a></li>');
   });

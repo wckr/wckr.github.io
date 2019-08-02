@@ -616,3 +616,11 @@ dl.dl_inline {
 		}
 	}
 }
+
+.changelog {
+
+	h2 small {
+		color: $silver_dark;
+		font-size: $base_font_size * 1.4;
+	}
+}
