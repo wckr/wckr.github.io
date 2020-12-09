@@ -5,6 +5,10 @@ title: Wocker Changelog
 type: changelog
 ---
 
+## 1.5.3 <small>Dec 9, 2020</small>
+- WordPress 5.6
+- Update Docker commands aliases
+
 ## 1.5 <small>Feb 29, 2020</small>
 - Upgrade PHP 7.0 to PHP 7.3
 - Add php-imagick
