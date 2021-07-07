@@ -87,3 +87,48 @@ This will create a new container `test`. If you already have a container to down
 </div>
 
 This will force download WordPress 3.5 to the running container using the `wocker wp` command. After this finishes successfully, you will have a WordPress 3.5 environment if you visit [http://wocker.dev](http://wocker.dev). You can change `3.5` to any version you want.
+
+## Use Remote Debug
+
+There are supported clients list in [Step Debugging](https://xdebug.org/docs/remote) document by Xdebug official.
+
+### 1. setting IDE or Editor
+
+Listen port 9000.  
+Remote path for WordPress is `/var/www/wordpress`.
+
+Example, setteings for Visual Studio Code.  
+data\wocker\wp-content\\.vscode\launch.json
+
+<div class="highlight">
+  <pre><code data-lang="json" class="language-json">
+"configurations": [
+     {
+        "name": "Listen for XDebug",
+        "type": "php",
+        "request": "launch",
+        "port": 9000,
+        "pathMappings":{
+            "/var/www/wordpress/wp-content":"${workspaceFolder}"
+         }
+    },
+]
+  </code></pre>
+</div>
+
+### 2. Set breakpoint in IDE
+
+Example Visual Studio Code.
+![Set breakpoint, example Visual Studio Code]({{site.baseurl}}/assets/images/set-breakpoint-vsc.png)
+
+### 3. Set mode of IDE to listen XDebug
+
+![Listen XDebug, example Visual Studio Code]({{site.baseurl}}/assets/images/listen-xdebug-vsc.png)
+
+### 4. Start debug session by access
+
+Access `http://wocker.test/?XDEBUG_SESSION_START` or using browser addon.  
+See "Using a browser extension" section in [Step Debugging](https://xdebug.org/docs/remote) page Xdebug official.
+
+### 5. Hit breakpoint
+![Hit breakpoint]({{site.baseurl}}/assets/images/hit-breakpoint-vsc.png)
